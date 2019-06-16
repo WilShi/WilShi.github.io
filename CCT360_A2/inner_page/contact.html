@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Page</title>
+    <!-- Bootstrap -->
+	<link href="../css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+  	<!-- body code goes here -->
+	<header class="sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto" style="margin: 0px auto;">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../inner_page/portfolio.html">Protfolio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../inner_page/production.html">Production</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="blog.html">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="resume.html">Resume</a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+					</li>
+				</ul>
+			</div>
+			
+		</nav>
+	</header>
+	  
+
+	<div class="container" id="resume">
+	  <div style="text-align:center">
+		<h2 style="padding-top: 20px;">Contact Me</h2>
+		<p>Swing by for a cup of coffee, or leave me a message:</p>
+	  </div>
+	  <div class="row">
+		<div class="column">
+		  <img src="../image/map.png" style="width:100%" alt="map">
+		</div>
+		<div class="column">
+		  <form action="/action_page.php">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name..">
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			<label for="country">Purpose</label>
+			<select id="country" name="country">
+			  <option value="work">Work</option>
+			  <option value="study">Study</option>
+			  <option value="chat">Chat</option>
+			</select>
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+			<input type="submit" value="Submit">
+		  </form>
+		</div>
+	  </div>
+	</div>
+	  
+	  
+	
+	
+	<!-- Footer -->
+	<footer class="footer navbar-fixed-bottom ">
+		<div class="container">
+			<p class="copyright">Copyright &copy; 2019. WENBO SHI TECHNOLOGIES CORP. </p>
+		</div>
+	</footer>
+	<!-- //footer -->
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="../js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="../js/popper.min.js"></script> 
+	<script src="../js/bootstrap-4.3.1.js"></script>
+  </body>
+</html>
