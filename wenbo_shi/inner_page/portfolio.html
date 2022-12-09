@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+
+<head>
+    <!--head code start here-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio page</title>
+    <!--Style sheet-->
+    <!--Framework from bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Javs script-->
+    <!--Framework from bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="../js/jquery.ripples-min.js"></script>
+
+</head>
+
+<body>
+    <!--body code start here-->
+
+    <!--Navbar code start here-->
+    <!--Framework from bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background:rgba(0,0,0,0.6);">
+        <a class="navbar-brand" href="../index.html"><img alt="logo" src="../img/logo.png"></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse mx-auto" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="production.html">Production</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	
+	<section id="water">
+		<div class="carousel-caption d-none d-md-block">
+            <div class="introtext" style="margin-top: -100px;">
+                <h1>Portfolio</h1></div>
+            <div class="introtext_h5">
+                <a class="btn btn-primary btn-xl js-scroll-trigger" style="margin: 0px auto; display: table;" target="_blank" href="../img/art_p.pdf">Download My Portfolio</a>
+            </div>
+        </div>
+	</section>
+	<script>
+		$(document).ready(function(){
+			$('section').ripples({
+				dropRadius: 10,		
+				perturbance: 0.01,	
+				resolution: 512,	
+				interactive: true,
+			});
+		})
+	</script>
+
+<!--
+    <img src="../img/pr1.gif" alt="" style="max-height: 800px;"/>
+    <div class="carousel-item active">
+        <img src="../img/pr1.gif" class="d-block w-100" alt="Photos of life" style="max-height: 800px;">
+        <div class="carousel-caption d-none d-md-block">
+            <div class="introtext" style="margin-top: -100px;">
+                <h1>Art Works</h1></div>
+            <div class="introtext_h5">
+                <a class="btn btn-primary btn-xl js-scroll-trigger" style="margin: 0px auto; display: table;" target="_blank" href="../img/art_p.pdf">Download My Portfolio</a>
+            </div>
+        </div>
+    </div>
+-->
+
+    <!-- Portfolio -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-section-heading text-center">
+                <h3 class="text-secondary mb-0">Portfolio</h3>
+                <h2 class="mb-5">Recent Projects</h2>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#website">
+                        <span class="caption">
+				  <span class="caption-content">
+					<h2>Websites</h2>
+				  </span>
+                        </span>
+                        <img class="img-fluid" src="../img/wb1.jpg" alt="" style="height: 300px;">
+                    </a>
+
+                </div>
+                <div class="col-lg-6">
+                    <a class="portfolio-item" href="#artwork">
+                        <span class="caption">
+				  <span class="caption-content">
+					<h2>Artwork</h2>
+				  </span>
+                        </span>
+                        <img class="img-fluid" src="../img/ho2.jpg" alt="" style="height: 300px;">
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <a class="btn btn-primary btn-xl js-scroll-trigger" style="margin: 0px auto; display: table;" target="_blank" href="../img/art_p.pdf">Download My Portfolio</a>
+    <!-- Portfolio -->
+
+    <hr>
+
+	<div class="container" id="website">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">Website Projects</h2>
+            </div>
+	</div>
+	
+    <div class="art_agileinfo" id="personweb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 personweb"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <h3 class="title" style="padding-top: 40px;">Personal</h3>
+                    <h4>Description:</h4>
+                    <p>This my personal website made in 2018.</p>
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="art_agileinfo" id="eduweb">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <h3 class="title" style="padding-top: 40px;">Education</h3>
+                    <h4>Description:</h4>
+                    <p>This website show the space redshift made in 2019.</p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 eduweb"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <a class="btn btn-primary btn-xl js-scroll-trigger" style="margin: 0px auto; display: table;" target="_blank" href="../img/art_p.pdf">Download My Portfolio</a>
+    <hr>
+	
+	<div class="container" id="artwork">
+            <div class="content-section-heading text-center">
+                <h2 class="mb-5">Artwork Projects</h2>
+            </div>
+	</div>
+
+    <!-- Art Statement -->
+    <div class="about_agileinfo" id="about">
+        <div class="container">
+            <h3 class="title">Artist Statement</h3>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 artist_statements"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <p>To create art work, it is required to be creative, since you need to make your art work stand out among many pieces. When I draw more and more pieces of drawing, it will help me build my skills and also be easy for me to come up with more mature creative ideas, and to show them effectively. Finally, it is a really great and direct way to record the beauty in the life. Art work is really vivid for people to see how real views are and how actually beautiful they are. For me, an image is more memorable than a piece of article, and it is my another motive of doing art. Overall, chasing new skills, making myself become more creative and recoding beauties in our life in a vivid way are the motive of doing art for me.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="art_agileinfo" id="peace">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <h3 class="title" style="padding-top: 40px;">Peace</h3>
+                    <h4>Description:</h4>
+                    <p>In the foreground of this painting, there is showing a boat’s bow and a brown bag on it. Inthe middle ground, the clear lake with the reflection of trees that are on the shoreshide and the waves in the lake, there are also many green pine trees and lawn on the both sides of shore side. The sky is showed also, it is a sunny day with blue sky and white clouds. In the background, there are more and more trees, they are just become smaller and smaller because of distance.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 peace"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="art_agileinfo" id="lonely">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 lonely"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <h3 class="title" style="padding-top: 40px;">Lonely</h3>
+                    <h4>Description:</h4>
+                    <p>This is drawn by chalks, and the idea is from a poem that was chosen in the class. There is a man standing on a ship that is travelling in the lake at night, on the ship, you have a good view of Toronto. It is also lonely for him to stand there alone. It is also a reflection of me who come to this remote country alone without any friends, family members and support here, it is such a lonely time.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="art_agileinfo" id="trance">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <h3 class="title" style="padding-top: 40px;">Trance</h3>
+                    <h4>Description:</h4>
+                    <p>This is a bust of a partner’s head, it contains the facial features of head, hair, eyes, nose, ears, mouth and neck, it is used clay and lots of paper and masking tape to finally finish it. It is named Trance showing a person is droopy, it is a state of many teenagers nowadays, they are not as active as they should be at this age.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 Trance"></div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="art_agileinfo" id="life">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6 Life"></div>
+                <div class="col-md-6 col-sm-6 col-xs-6 about_text_w3l">
+                    <h3 class="title" style="padding-top: 100px;">Life</h3>
+                    <h4>Description:</h4>
+                    <p>This is a drawing of still life, it has a yellow pen, a pencil sharpener, a ink bottle and a candy case. They are all put on a desk. It also has a purple background. Pen represents my study, and other objects represents what and who help me for this years, such as pencil sharpener represents teacher who correct my mistakes all the time.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <h2 class="mb-5" style="text-align: center; padding-top: 30px;">More Art Works</h2>
+
+    <div class="container">
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="../img/p11.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Flying Together</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/p12.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Eiffel Tower</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/p10.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Downtown Toronto</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="../img/p3.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Fujian Tulou</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/p14.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Lake Shore</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/p7.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Six</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <img class="card-img-top" src="../img/p8.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Peace (Sketch)</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/p13.PNG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Sun</h5>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="../img/p9.JPG" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Baijia Lake</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Artist Statement -->
+
+    <!-- Footer -->
+    <footer class="footer navbar-fixed-bottom ">
+        <div class="container">
+            <p class="copyright">Copyright &copy; 2020. WENBO SHI TECHNOLOGIES CORP. </p>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+
+</html>
