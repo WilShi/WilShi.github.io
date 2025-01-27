@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D抓娃娃机</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #instructions {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        #victory-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+        }
+        #victory-text {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        #restart-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        #restart-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div id="instructions">
+        <h3>操作说明：</h3>
+        <p>W/↑: 前移</p>
+        <p>S/↓: 后移</p>
+        <p>A/←: 左移</p>
+        <p>D/→: 右移</p>
+        <p>空格: 抓取</p>
+        <p>鼠标: 视角控制</p>
+    </div>
+    <div id="victory-container">
+        <div id="victory-text">你胜利啦！</div>
+        <button id="restart-button">重新开始</button>
+    </div>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/examples/jsm/controls/OrbitControls": "https://unpkg.com/three@0.157.0/examples/jsm/controls/OrbitControls.js",
+                "three/examples/jsm/loaders/GLTFLoader": "https://unpkg.com/three@0.157.0/examples/jsm/loaders/GLTFLoader.js"
+            }
+        }
+    </script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
