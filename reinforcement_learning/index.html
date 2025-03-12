@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>强化学习: 边玩边学 | 交互式教程</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/geist-font/dist/geist-mono.css" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased selection:bg-gray-900 selection:text-white">
+    <header class="sticky top-0 bg-white border-b border-gray-100 z-50">
+        <div class="container max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-black">
+                    <circle cx="12" cy="12" r="8"></circle>
+                    <path d="M12 8v4l2 2"></path>
+                    <path d="M12 2v2"></path>
+                    <path d="M12 20v2"></path>
+                    <path d="M20 12h2"></path>
+                    <path d="M2 12h2"></path>
+                </svg>
+                <span class="text-xl font-medium tracking-tight">强化学习探索</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#intro" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">简介</a></li>
+                    <li><a href="#key-concepts" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">核心概念</a></li>
+                    <li><a href="#interactive" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">互动实验</a></li>
+                    <li><a href="#applications" class="text-gray-600 hover:text-gray-900 transition-colors duration-200">现实应用</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="py-16 md:py-24 px-4">
+            <div class="container max-w-5xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">探索人工智能的<span class="text-gradient">学习方式</span></h1>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10">通过游戏化的互动体验，了解机器如何像人类一样通过尝试和错误来学习</p>
+                <div class="hero-animation mb-10 h-64 relative border border-gray-200 rounded-lg overflow-hidden">
+                    <div id="agent" class="absolute w-12 h-12 bg-white rounded-lg shadow-md flex items-center justify-center transition-all duration-300">
+                        <svg id="agent-svg" class="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                            <use href="#agent-icon"></use>
+                        </svg>
+                    </div>
+                    <div id="reward" class="absolute w-8 h-8 bg-yellow-400 rounded-full shadow-sm flex items-center justify-center transition-all duration-300 opacity-0">
+                        <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <use href="#reward-icon"></use>
+                        </svg>
+                    </div>
+                    <div id="environment" class="absolute inset-0"></div>
+                </div>
+                <a href="#intro" class="inline-flex items-center px-6 py-3 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors duration-200">
+                    开始探索
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="intro" class="py-16 px-4 bg-gray-50">
+            <div class="container max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 leading-tight">什么是强化学习？</h2>
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div>
+                        <p class="text-lg mb-4 leading-relaxed">强化学习是机器学习的一种方法，它让<mark class="highlight">智能体(Agent)</mark>通过与<mark class="highlight">环境(Environment)</mark>的互动来学习最佳行为。</p>
+                        <p class="text-lg mb-4 leading-relaxed">想象一下你在教一只小狗新技巧：当它做对时，你给它小零食作为<mark class="highlight">奖励(Reward)</mark>；做错时，则不给奖励。久而久之，小狗会学会什么行为能获得奖励，并倾向于重复这些行为。</p>
+                        <p class="text-lg leading-relaxed">强化学习也是这样工作的 - 智能体通过<span class="font-semibold">行动(Action)</span>、<span class="font-semibold">观察(Observation)</span>和获取<span class="font-semibold">奖励(Reward)</span>来不断改进自己的<span class="font-semibold">策略(Policy)</span>。</p>
+                    </div>
+                    <div class="learning-cycle">
+                        <svg id="rl-diagram" class="w-full max-w-md mx-auto" viewBox="0 0 400 300" fill="none">
+                            <!-- Agent -->
+                            <g id="agent-node">
+                                <circle cx="100" cy="150" r="60" class="fill-white stroke-gray-200 stroke-2"/>
+                                <text x="100" y="150" class="text-xl font-semibold text-center">智能体</text>
+                                <text x="100" y="170" class="text-sm font-geist-mono text-gray-500 text-center">Agent</text>
+                            </g>
+                            
+                            <!-- Environment -->
+                            <g id="environment-node">
+                                <circle cx="300" cy="150" r="60" class="fill-white stroke-gray-200 stroke-2"/>
+                                <text x="300" y="150" class="text-xl font-semibold text-center">环境</text>
+                                <text x="300" y="170" class="text-sm font-geist-mono text-gray-500 text-center">Environment</text>
+                            </g>
+                            
+                            <!-- Action Arrow -->
+                            <g id="action-arrow">
+                                <path d="M160 130 L240 130" class="stroke-gray-400 stroke-2"/>
+                                <path d="M235 125 L240 130 L235 135" class="fill-gray-400"/>
+                                <text x="200" y="120" class="text-sm font-geist-mono text-gray-500 text-center">行动 (Action)</text>
+                            </g>
+                            
+                            <!-- Reward Arrow -->
+                            <g id="reward-arrow">
+                                <path d="M240 170 L160 170" class="stroke-gray-400 stroke-2"/>
+                                <path d="M165 165 L160 170 L165 175" class="fill-gray-400"/>
+                                <text x="200" y="190" class="text-sm font-geist-mono text-gray-500 text-center">状态 + 奖励</text>
+                                <text x="200" y="205" class="text-sm font-geist-mono text-gray-500 text-center">(State + Reward)</text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-concepts" class="py-16 px-4">
+            <div class="container max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 leading-tight">强化学习的核心概念</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-12">
+                    <div class="concept-card group">
+                        <svg class="w-12 h-12 mb-4 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <use href="#agent-icon"></use>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">智能体 (Agent)</h3>
+                        <p class="text-gray-600">学习和决策的主体，通过观察环境状态并采取行动来获取奖励。可以是虚拟的（如游戏AI）或现实的（如机器人）。</p>
+                    </div>
+                    
+                    <div class="concept-card group">
+                        <svg class="w-12 h-12 mb-4 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <use href="#environment-icon"></use>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">环境 (Environment)</h3>
+                        <p class="text-gray-600">智能体所处的世界，提供状态信息并对智能体的行动作出反应。环境可以是确定的或随机的。</p>
+                    </div>
+                    
+                    <div class="concept-card group">
+                        <svg class="w-12 h-12 mb-4 text-gray-900" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <use href="#reward-icon"></use>
+                        </svg>
+                        <h3 class="text-xl font-semibold mb-2">奖励 (Reward)</h3>
+                        <p class="text-gray-600">环境提供的反馈信号，引导智能体学习良好行为。奖励可以是即时的（每步给予），也可以是延迟的（任务完成后）。</p>
+                    </div>
+                </div>
+                
+                <div class="exploration-exploitation bg-gray-50 p-8 rounded-lg border border-gray-100 mb-12">
+                    <h3 class="text-2xl font-semibold mb-4">探索与利用的平衡</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="mb-4">强化学习中的一个核心挑战是：智能体应该<mark class="highlight">探索(Explore)</mark>新的可能性，还是<mark class="highlight">利用(Exploit)</mark>已知的好策略？</p>
+                            
+                            <div class="flex mb-4 items-start">
+                                <span class="flex-shrink-0 mr-3 mt-1"><i data-lucide="map" class="w-5 h-5"></i></span>
+                                <div>
+                                    <p class="font-medium mb-1">探索 (Exploration)</p>
+                                    <p class="text-gray-600 text-sm">尝试新的、未知的行动，可能发现更好的策略，但也冒着获得低奖励的风险。</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <span class="flex-shrink-0 mr-3 mt-1"><i data-lucide="target" class="w-5 h-5"></i></span>
+                                <div>
+                                    <p class="font-medium mb-1">利用 (Exploitation)</p>
+                                    <p class="text-gray-600 text-sm">使用已知的、有效的策略来获取稳定的奖励，但可能错过更优的策略。</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <p class="mb-3">想象你去一个新城市旅游，每天晚上都需要选择一家餐厅：</p>
+                            
+                            <div class="bg-white p-4 rounded shadow-sm mb-3">
+                                <p class="font-medium">探索策略：尝试新餐厅</p>
+                                <p class="text-sm text-gray-600">可能发现惊喜，但也可能遇到难吃的食物</p>
+                            </div>
+                            
+                            <div class="bg-white p-4 rounded shadow-sm">
+                                <p class="font-medium">利用策略：回到已知好吃的餐厅</p>
+                                <p class="text-sm text-gray-600">确保满意的用餐体验，但可能错过城市最棒的美食</p>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <div class="relative pt-1">
+                                    <div class="flex justify-between mb-1">
+                                        <span class="text-xs text-gray-600">更多探索</span>
+                                        <span class="text-xs text-gray-600">更多利用</span>
+                                    </div>
+                                    <input type="range" id="explore-exploit-slider" min="0" max="100" value="50" class="w-full">
+                                    <div class="text-center mt-1">
+                                        <span id="slider-value" class="text-sm font-geist-mono">50%</span>
+                                    </div>
+                                </div>
+                                <div id="explore-exploit-visual" class="h-28 bg-gray-50 rounded border border-gray-200 mt-2 flex flex-wrap p-1 gap-1 overflow-hidden"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新增：策略优化方法 -->
+                <div class="policy-optimization bg-gray-50 p-8 rounded-lg border border-gray-100 mb-12">
+                    <h3 class="text-2xl font-semibold mb-4">策略优化方法</h3>
+                    <p class="mb-4">除了基于值的方法（如Q-Learning），强化学习还包括直接优化策略的方法：</p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="font-semibold mb-2">策略梯度 (Policy Gradient)</h4>
+                            <p class="text-gray-600">策略梯度方法直接优化策略函数，通过调整策略参数来最大化期望奖励。这种方法特别适合连续动作空间问题。</p>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-2">深度强化学习 (Deep Reinforcement Learning)</h4>
+                            <p class="text-gray-600">结合深度学习和强化学习，使用神经网络来近似值函数或策略函数。这种方法在处理高维状态空间时表现出色。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="learning-process bg-gray-50 p-8 rounded-lg border border-gray-100">
+                    <h3 class="text-2xl font-semibold mb-6">强化学习的工作流程</h3>
+                    
+                    <div class="learning-steps">
+                        <div class="step">
+                            <div class="step-marker">1</div>
+                            <div class="step-content">
+                                <h4 class="font-semibold mb-1">观察状态</h4>
+                                <p class="text-gray-600 text-sm">智能体获取当前环境状态的信息</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-connector"></div>
+                        
+                        <div class="step">
+                            <div class="step-marker">2</div>
+                            <div class="step-content">
+                                <h4 class="font-semibold mb-1">做出决策</h4>
+                                <p class="text-gray-600 text-sm">基于当前策略选择一个行动</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-connector"></div>
+                        
+                        <div class="step">
+                            <div class="step-marker">3</div>
+                            <div class="step-content">
+                                <h4 class="font-semibold mb-1">执行行动</h4>
+                                <p class="text-gray-600 text-sm">在环境中执行所选的行动</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-connector"></div>
+                        
+                        <div class="step">
+                            <div class="step-marker">4</div>
+                            <div class="step-content">
+                                <h4 class="font-semibold mb-1">获得反馈</h4>
+                                <p class="text-gray-600 text-sm">环境返回新状态和奖励信号</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-connector"></div>
+                        
+                        <div class="step">
+                            <div class="step-marker">5</div>
+                            <div class="step-content">
+                                <h4 class="font-semibold mb-1">学习更新</h4>
+                                <p class="text-gray-600 text-sm">调整策略以获取更多奖励</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="learning-loop mt-6">
+                        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="text-gray-500 mx-auto mb-1">
+                            <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                        </svg>
+                        <p class="text-center text-sm text-gray-500">不断重复以上步骤，持续改进</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive" class="py-16 px-4 bg-gray-50">
+            <div class="container max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 leading-tight">互动实验：迷宫探索</h2>
+                <p class="text-lg mb-8 leading-relaxed">通过这个简单的迷宫游戏，体验强化学习的基本原理。智能体（机器人）需要在迷宫中找到通往奖励的路径，一开始它对环境一无所知，但通过不断尝试和学习，它将找到最佳路径！</p>
+                
+                <div class="grid md:grid-cols-5 gap-8 mb-10">
+                    <div class="md:col-span-3">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex space-x-3">
+                                    <button id="btn-reset" class="px-4 py-2 bg-gray-100 rounded hover:bg-gray-200 transition-colors font-medium flex items-center">
+                                        <i data-lucide="refresh-cw" class="w-4 h-4 mr-1"></i>
+                                        重置
+                                    </button>
+                                    <button id="btn-train" class="px-4 py-2 bg-gray-900 text-white rounded hover:bg-gray-800 transition-colors font-medium flex items-center">
+                                        <i data-lucide="brain" class="w-4 h-4 mr-1"></i>
+                                        开始训练
+                                    </button>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-sm">速度:</span>
+                                    <input type="range" id="speed-slider" min="1" max="10" value="5" class="w-24">
+                                </div>
+                            </div>
+                            
+                            <div class="maze-container">
+                                <div id="maze-grid" class="grid grid-cols-8 grid-rows-8 gap-1 bg-gray-100 rounded-lg p-2 aspect-square"></div>
+                                <div id="maze-agent" class="maze-agent"></div>
+                            </div>
+                            
+                            <div class="learning-stats mt-4 grid grid-cols-4 gap-4">
+                                <div class="stat-box">
+                                    <p class="text-sm text-gray-500">回合数</p>
+                                    <p id="episode-count" class="text-2xl font-geist-mono">0</p>
+                                </div>
+                                <div class="stat-box">
+                                    <p class="text-sm text-gray-500">总步数</p>
+                                    <p id="step-count" class="text-2xl font-geist-mono">0</p>
+                                </div>
+                                <div class="stat-box">
+                                    <p class="text-sm text-gray-500">平均步数</p>
+                                    <p id="avg-steps" class="text-2xl font-geist-mono">0</p>
+                                </div>
+                                <div class="stat-box">
+                                    <p class="text-sm text-gray-500">成功率</p>
+                                    <p id="success-rate" class="text-2xl font-geist-mono">0%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:col-span-2">
+                        <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                            <h3 class="text-xl font-semibold mb-4">学习过程解析</h3>
+                            
+                            <div class="learning-phases mb-6">
+                                <div class="phase-item">
+                                    <div class="phase-indicator">
+                                        <div id="phase-explore" class="phase-active"></div>
+                                    </div>
+                                    <div class="phase-content">
+                                        <p class="font-medium">1. 探索阶段</p>
+                                        <p class="text-sm text-gray-600">智能体随机尝试不同行动，积累经验</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="phase-connector"></div>
+                                
+                                <div class="phase-item">
+                                    <div class="phase-indicator">
+                                        <div id="phase-learn" class="phase-inactive"></div>
+                                    </div>
+                                    <div class="phase-content">
+                                        <p class="font-medium">2. 学习阶段</p>
+                                        <p class="text-sm text-gray-600">开始发现有效策略，但仍然会探索</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="phase-connector"></div>
+                                
+                                <div class="phase-item">
+                                    <div class="phase-indicator">
+                                        <div id="phase-exploit" class="phase-inactive"></div>
+                                    </div>
+                                    <div class="phase-content">
+                                        <p class="font-medium">3. 利用阶段</p>
+                                        <p class="text-sm text-gray-600">利用学到的最佳策略，高效到达目标</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h4 class="font-semibold mb-2">奖励设置</h4>
+                            <ul class="reward-list mb-6">
+                                <li class="flex items-start mb-2">
+                                    <span class="w-6 h-6 bg-green-500 rounded-full flex-shrink-0 mr-2"></span>
+                                    <div>
+                                        <p class="font-medium">到达目标</p>
+                                        <p class="text-sm text-gray-600">+100分</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start mb-2">
+                                    <span class="w-6 h-6 bg-red-500 rounded-full flex-shrink-0 mr-2"></span>
+                                    <div>
+                                        <p class="font-medium">撞到墙壁</p>
+                                        <p class="text-sm text-gray-600">-10分</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="w-6 h-6 bg-gray-500 rounded-full flex-shrink-0 mr-2"></span>
+                                    <div>
+                                        <p class="font-medium">每一步移动</p>
+                                        <p class="text-sm text-gray-600">-1分（鼓励寻找最短路径）</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <h4 class="font-semibold mb-2">学习进度</h4>
+                            <div class="progress-container mb-1">
+                                <div id="learning-progress" class="progress-bar" style="width: 0%"></div>
+                            </div>
+                            <p id="learning-status" class="text-center text-sm text-gray-500 mb-4">等待开始训练...</p>
+                            
+                            <div class="q-value-viz bg-gray-50 p-2 rounded-lg border border-gray-200">
+                                <p class="text-xs text-gray-500 mb-1 text-center">Q值可视化（颜色越深表示价值越高）</p>
+                                <div id="q-value-grid" class="grid grid-cols-5 grid-rows-5 gap-0.5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+                    <h3 class="text-xl font-semibold mb-4">强化学习算法：Q-Learning</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <p class="mb-4">在这个演示中，我们使用了<mark class="highlight">Q-Learning</mark>算法，这是一种经典的强化学习方法。该算法通过构建一个"Q表"来记录在各种状态下不同行动的预期价值。</p>
+                            <p>Q-Learning的核心思想是：</p>
+                            <ol class="list-decimal pl-5 space-y-2 mt-3">
+                                <li>对于每个状态-动作对，记录一个Q值，表示该动作的预期长期价值</li>
+                                <li>随着智能体在环境中积累经验，不断更新这些Q值</li>
+                                <li>最终，智能体可以通过选择Q值最高的动作来获得最大收益</li>
+                            </ol>
+                            
+                            <p class="mt-4">在更复杂的环境中，传统的Q-Learning可能无法有效处理高维状态空间。为此，研究者提出了<mark class="highlight">深度Q网络（DQN）</mark>，它结合了深度学习和Q-Learning，使用神经网络来近似Q值函数。</p>
+                        </div>
+                        <div>
+                            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                                <p class="font-medium mb-2 font-geist-mono">Q-Learning更新公式:</p>
+                                <div class="bg-white p-3 rounded">
+                                    <div class="formula font-geist-mono text-sm leading-relaxed">
+                                        Q(s,a) ← Q(s,a) + α[R + γ·max<sub>a'</sub>Q(s',a') - Q(s,a)]
+                                    </div>
+                                </div>
+                                <div class="mt-3 text-sm space-y-1">
+                                    <p>其中:</p>
+                                    <p><span class="font-geist-mono">Q(s,a)</span>: 状态s下采取动作a的价值</p>
+                                    <p><span class="font-geist-mono">α</span>: 学习率，控制更新速度</p>
+                                    <p><span class="font-geist-mono">R</span>: 获得的即时奖励</p>
+                                    <p><span class="font-geist-mono">γ</span>: 折扣因子，平衡即时与未来奖励</p>
+                                    <p><span class="font-geist-mono">s'</span>: 执行动作a后的新状态</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="applications" class="py-16 px-4">
+            <div class="container max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10 leading-tight">强化学习的现实应用</h2>
+                
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="application-card">
+                        <div class="app-icon bg-blue-50 text-blue-500">
+                            <i data-lucide="gamepad-2" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">游戏AI</h3>
+                        <p class="text-gray-600">强化学习使游戏AI能够通过尝试和错误来学习，创造出适应性强的对手。从简单的贪吃蛇到复杂的围棋和星际争霸，AI已经能够达到甚至超越人类水平。</p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <div class="app-icon bg-green-50 text-green-500">
+                            <i data-lucide="car" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">自动驾驶</h3>
+                        <p class="text-gray-600">自动驾驶汽车可以通过强化学习来优化在复杂路况中的决策。AI通过模拟或真实驾驶中的经验来学习安全、高效的驾驶策略。</p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <div class="app-icon bg-purple-50 text-purple-500">
+                            <i data-lucide="bot" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">机器人控制</h3>
+                        <p class="text-gray-600">强化学习使机器人能够学习复杂的动作和技能，如物体抓取、平衡行走或协作任务。机器人通过与物理环境的互动不断改进其控制策略。</p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <div class="app-icon bg-yellow-50 text-yellow-500">
+                            <i data-lucide="zap" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">能源优化</h3>
+                        <p class="text-gray-600">数据中心利用强化学习来优化冷却系统和能源消耗。智能电网使用这些技术来平衡供需，并整合可再生能源资源。</p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <div class="app-icon bg-red-50 text-red-500">
+                            <i data-lucide="heart-pulse" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">医疗保健</h3>
+                        <p class="text-gray-600">强化学习可以帮助开发个性化治疗计划，根据患者反应动态调整治疗方案。它还可以优化医院资源分配和临床试验设计。</p>
+                    </div>
+                    
+                    <div class="application-card">
+                        <div class="app-icon bg-indigo-50 text-indigo-500">
+                            <i data-lucide="trending-up" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">金融交易</h3>
+                        <p class="text-gray-600">交易算法可以使用强化学习来学习复杂的市场模式并制定交易策略。这些系统通过模拟市场环境进行大量训练，不断改进其决策能力。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-16 px-4 bg-gray-50 text-center">
+            <div class="container max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">开启您的强化学习之旅</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">强化学习是人工智能领域最令人兴奋的分支之一，它让机器能够像人类一样通过尝试和错误来学习。我们希望这个交互式指南为您揭示了强化学习的魅力！</p>
+                <a href="#hero" class="inline-flex items-center px-6 py-3 rounded-lg bg-gray-900 text-white font-medium hover:bg-gray-800 transition-colors duration-200">
+                    返回顶部
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ml-2">
+                        <path d="m18 15-6-6-6 6"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-8 px-4">
+        <div class="container max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="order-2 md:order-1 mt-4 md:mt-0">
+                <p class="text-gray-500 text-sm">Built by <a href="https://wilshi.github.io/wenbo_shi/index.html" class="text-gray-900 hover:underline">施文博</a>.</p>
+            </div>
+            <div class="order-1 md:order-2">
+                <p class="text-gray-500 text-sm">© 2024 强化学习探索之旅</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SVG Definitions -->
+    <svg width="0" height="0" class="hidden">
+        <symbol id="agent-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
+            <circle cx="9" cy="9" r="1" fill="currentColor"></circle>
+            <circle cx="15" cy="9" r="1" fill="currentColor"></circle>
+            <path d="M9 15h6"></path>
+        </symbol>
+        
+        <symbol id="environment-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12a9 9 0 0 1-9 9m9-9a9 9 0 0 0-9-9m9 9H3m9 9a9 9 0 0 1-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 0 1 9-9"></path>
+        </symbol>
+        
+        <symbol id="reward-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2 7.5 7.5M12 2l4.5 5.5m-9 5 4.5 5.5M7.5 7.5l4.5 5.5m0 0L16.5 18M16.5 7.5 12 13"></path>
+        </symbol>
+    </svg>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <script src="animations.js"></script>
+    <script src="maze.js"></script>
+    <script src="qlearning.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Prevent zooming on the webpage
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+    </script>
+</body>
+</html>
