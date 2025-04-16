@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="日本本州5.1-5.6六天深度游攻略，涵盖天气预测、穿搭指南和景点详解，助您规划完美旅行。">
+    <meta name="keywords" content="日本旅行, 本州攻略, 5月旅行, 名古屋, 镰仓, 东京, 富士山, 京都, 大阪">
+    <title>日本本州5.1-5.6旅行攻略</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #ff9800;
+            --neutral-color: #333;
+            --bg-light: #f8f9fa;
+        }
+        .weather-icon {
+            font-size: 2.5rem;
+            margin-right: 0.5rem;
+        }
+        .day-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .day-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 8px 24px rgba(0, 123, 255, 0.15);
+        }
+        .section-title {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        @media (max-width: 768px) {
+            .flex-col.md\:flex-row {
+                flex-direction: column !important;
+            }
+            .md\:w-1\/3 {
+                width: 100% !important;
+                height: 200px;
+            }
+        }
+    </style>
+    <!-- 建议在服务器端设置缓存头，例如：Cache-Control: max-age=31536000 -->
+    <!-- 建议启用 HTTPS 以提高安全性和 SEO 排名 -->
+</head>
+<body class="font-sans antialiased text-gray-800 leading-normal tracking-wider bg-gray-50">
+    <!-- 英雄Header -->
+    <header class="hero bg-cover bg-center h-96" style="background-image: url('https://picsum.photos/1920/1080?random=1&t=japan')">
+        <div class="container mx-auto px-6 md:px-24 relative z-10 flex items-center h-full">
+            <div class="text-white">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6">日本本州5.1-5.6六天深度游攻略</h1>
+                <p class="text-2xl md:text-3xl">涵盖天气预测、穿搭指南、景点详解的沉浸式旅行手册</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- 主内容 -->
+    <main class="container mx-auto px-6 md:px-24 py-16">
+        <!-- 第一天 -->
+        <article class="day-card bg-white mb-12 shadow-lg" aria-labelledby="day1-title">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-cover bg-no-repeat bg-center h-64" style="background-image: url('https://picsum.photos/400/300?random=2&t=airport')">
+                    <img src="https://picsum.photos/400/300?random=2&t=airport" alt="南京至名古屋机场" class="hidden" loading="lazy">
+                </div>
+                <div class="p-8 md:p-12 flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="day1-title" class="text-3xl md:text-4xl font-bold text-[var(--primary-color)]">第一天（5月1日）：南京→名古屋</h2>
+                        <div class="flex items-center">
+                            <span class="weather-icon text-[var(--primary-color)]"><i class="fas fa-plane-departure" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="text-xl font-medium">名古屋天气</span><br>
+                                <span class="text-lg">15-25℃ | 多云 | 湿度80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="section-title text-lg mb-4">行程详情</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li><strong>交通</strong>：参考航班HO1615（08:30-11:30），名古屋机场专车接机</li>
+                                <li><strong>活动</strong>：抵达后乘车至中部地区酒店，办理入住后自由活动</li>
+                                <li><strong>餐饮</strong>：全天自理（可尝试名古屋特色味噌猪排）</li>
+                                <li><strong>住宿</strong>：中部地区4-5星酒店（双人间，含早）</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="section-title text-lg mb-4">穿搭建议</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li>上装：薄长袖衬衫/透气T恤（机场空调冷，备针织开衫）</li>
+                                <li>下装：轻便长裤（防蚊防晒）+ 舒适运动鞋（长途飞行）</li>
+                                <li>贴士：携带颈枕、眼罩，穿吸湿速干内衣</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 第二天 -->
+        <article class="day-card bg-white mb-12 shadow-lg" aria-labelledby="day2-title">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-cover bg-no-repeat bg-center h-64" style="background-image: url('https://picsum.photos/400/300?random=3&t=coast')">
+                    <img src="https://picsum.photos/400/300?random=3&t=coast" alt="江之电沿线海岸" class="hidden" loading="lazy">
+                </div>
+                <div class="p-8 md:p-12 flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="day2-title" class="text-3xl md:text-4xl font-bold text-[var(--primary-color)]">第二天（5月2日）：江之电体验→镰仓</h2>
+                        <div class="flex items-center">
+                            <span class="weather-icon text-blue-600"><i class="fas fa-cloud-showers-heavy" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="text-xl font-medium">横滨/镰仓天气</span><br>
+                                <span class="text-lg">16-26℃ | 多云转阵雨 | 海风4级</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="section-title text-lg mb-4">核心行程</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li><strong>江之电电车</strong>：百年海岸线电车，串联20+景点，推荐车窗边拍摄湘南海岸</li>
+                                <li><strong>镰仓高校前</strong>：灌篮高手经典取景地，建议上午10点前打卡避开人流</li>
+                                <li><strong>鹤冈八幡小町通</strong>：全长约1公里，聚集300+店铺，必尝镰仓馒头、湘南咖啡</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="section-title text-lg mb-4">海滨穿搭</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li>防风层：薄款冲锋衣（防海风）+ 棒球帽（防发型凌乱）</li>
+                                <li>防水准备：便携折叠雨衣（突发阵雨）+ 防滑徒步鞋（沿海步道湿滑）</li>
+                                <li>防晒重点：SPF50+防晒霜（海边紫外线增强30%）、偏光墨镜</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-gray-200 pt-6">
+                        <h3 class="section-title text-lg mb-4">当日贴士</h3>
+                        <p class="text-gray-700">江之电一日券700日元无限次乘坐，镰仓高校前站下车后步行3分钟即达取景地</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 第三天 -->
+        <article class="day-card bg-white mb-12 shadow-lg" aria-labelledby="day3-title">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-cover bg-no-repeat bg-center h-64" style="background-image: url('https://picsum.photos/400/300?random=4&t=tokyo')">
+                    <img src="https://picsum.photos/400/300?random=4&t=tokyo" alt="东京街景" class="hidden" loading="lazy">
+                </div>
+                <div class="p-8 md:p-12 flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="day3-title" class="text-3xl md:text-4xl font-bold text-[var(--primary-color)]">第三天（5月3日）：东京文化购物之旅</h2>
+                        <div class="flex items-center">
+                            <span class="weather-icon text-yellow-500"><i class="fas fa-sun-cloud" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="text-xl font-medium">东京天气</span><br>
+                                <span class="text-lg">17-27℃ | 晴间多云 | 湿度65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="section-title text-lg mb-4">景点攻略</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li><strong>浅草寺</strong>：雷门拍照后，推荐在仲见世商店街购买人形烧、绘马牌</li>
+                                <li><strong>银座</strong>：三越百货9楼观景台免费开放，可俯瞰东京塔夜景</li>
+                                <li><strong>秋叶原</strong>：animate旗舰店8层手办天堂，持护照可享8%免税</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="section-title text-lg mb-4">都市穿搭</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li>时尚搭配：简约短袖+高腰牛仔裤（适合街拍）+ 小白鞋（日均步行1.5万步）</li>
+                                <li>实用单品：透明折叠伞（应对短时晴雨）、迷你斜挎包（防盗方便购物）</li>
+                                <li>室内保暖：薄款针织开衫（商场空调低至20℃）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-gray-200 pt-6">
+                        <h3 class="section-title text-lg mb-4">餐饮推荐</h3>
+                        <p class="text-gray-700">午餐安排日式烤肉专门店（推荐牛舌、横膈膜），晚餐可在秋叶原尝试女仆咖啡厅</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 第四天 -->
+        <article class="day-card bg-white mb-12 shadow-lg" aria-labelledby="day4-title">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-cover bg-no-repeat bg-center h-64" style="background-image: url('https://picsum.photos/400/300?random=5&t=fuji')">
+                    <img src="https://picsum.photos/400/300?random=5&t=fuji" alt="富士山五合目" class="hidden" loading="lazy">
+                </div>
+                <div class="p-8 md:p-12 flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="day4-title" class="text-3xl md:text-4xl font-bold text-[var(--primary-color)]">第四天（5月4日）：富士山深度探索</h2>
+                        <div class="flex items-center">
+                            <span class="weather-icon text-gray-600"><i class="fas fa-mountain" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="text-xl font-medium">富士山五合目天气</span><br>
+                                <span class="text-lg">10-18℃ | 多云有雾 | 风速6级</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="section-title text-lg mb-4">徒步指南</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li><strong>五合目</strong>：海拔2305米，步行栈道约1.5公里，建议佩戴防雾口罩</li>
+                                <li><strong>大石公园</strong>：4-5月芝樱盛开，最佳拍摄点在河口湖北岸观景台</li>
+                                <li><strong>忍野八海</strong>：八大清泉水质清澈，可购买限定款富士山形状水信玄饼</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="section-title text-lg mb-4">登山装备</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li>三层穿搭：速干衣（排汗）+ 抓绒衣（保暖）+ 防风冲锋衣（防水等级10000mm）</li>
+                                <li>专业装备：V底登山鞋（防滑）、30L登山包（装保温杯、能量棒）、魔术头巾（防风保暖多用）</li>
+                                <li>安全提示：提前确认五合目开放情况，携带便携血氧仪（高原反应预防）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-gray-200 pt-6">
+                        <h3 class="section-title text-lg mb-4">住宿亮点</h3>
+                        <p class="text-gray-700">入住箱根温泉酒店，含露天风吕体验，晚餐提供正统怀石料理（需提前预约座位）</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 第五天 -->
+        <article class="day-card bg-white mb-12 shadow-lg" aria-labelledby="day5-title">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-cover bg-no-repeat bg-center h-64" style="background-image: url('https://picsum.photos/400/300?random=6&t=kyoto')">
+                    <img src="https://picsum.photos/400/300?random=6&t=kyoto" alt="京都平安神宫" class="hidden" loading="lazy">
+                </div>
+                <div class="p-8 md:p-12 flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="day5-title" class="text-3xl md:text-4xl font-bold text-[var(--primary-color)]">第五天（5月5日）：京都奈良文化日</h2>
+                        <div class="flex items-center">
+                            <span class="weather-icon text-green-500"><i class="fas fa-cloud-rain" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="text-xl font-medium">京都/奈良天气</span><br>
+                                <span class="text-lg">16-26℃ | 阴转小雨 | 湿度85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="section-title text-lg mb-4">文化体验</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li><strong>平安神宫</strong>：朱红色回廊适合汉服拍照，神苑需脱鞋进入（备干净袜子）</li>
+                                <li><strong>茶道体验</strong>：着宽松衣物，学习抹茶搅拌手法（体验约40分钟，含和果子点心）</li>
+                                <li><strong>奈良公园</strong>：鹿仙贝150日元/份，喂食时手掌摊平避免被咬，勿触摸鹿角</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="section-title text-lg mb-4">雨天穿搭</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li>防水方案：GORE-TEX防水外套+快干束脚裤+防水鞋套（奈良石板路易打滑）</li>
+                                <li>礼仪适配：茶道活动建议穿棉麻材质衣物（避免皮质腰带等硬物）</li>
+                                <li>便携装备：超轻折叠伞（直径≥90cm）、防水手机套（拍摄鹿群时防溅水）</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-gray-200 pt-6">
+                        <h3 class="section-title text-lg mb-4">餐饮推荐</h3>
+                        <p class="text-gray-700">午餐安排京都汤豆腐专门店，晚餐可尝试奈良特色釜饭（野猪肉+松茸口味）</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 第六天 -->
+        <article class="day-card bg-white mb-12 shadow-lg" aria-labelledby="day6-title">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-cover bg-no-repeat bg-center h-64" style="background-image: url('https://picsum.photos/400/300?random=7&t=osaka')">
+                    <img src="https://picsum.photos/400/300?random=7&t=osaka" alt="大阪道顿堀" class="hidden" loading="lazy">
+                </div>
+                <div class="p-8 md:p-12 flex-1">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 id="day6-title" class="text-3xl md:text-4xl font-bold text-[var(--primary-color)]">第六天（5月6日）：大阪购物返程</h2>
+                        <div class="flex items-center">
+                            <span class="weather-icon text-purple-600"><i class="fas fa-umbrella" aria-hidden="true"></i></span>
+                            <div>
+                                <span class="text-xl font-medium">大阪天气</span><br>
+                                <span class="text-lg">17-26℃ | 中雨 | 风力2级</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="section-title text-lg mb-4">购物攻略</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li><strong>心斋桥</strong>：大丸百货9楼退税处需排队，建议提前30分钟办理</li>
+                                <li><strong>道顿堀</strong>：格力高广告牌最佳拍摄点在戎桥，必吃章鱼小丸子（推荐千房本店）</li>
+                                <li><strong>免税店</strong>：满5000日元可免税，药妆店推荐松本清（部分店铺支持中文导购）</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="section-title text-lg mb-4">返程穿搭</h3>
+                            <ul class="list-inside list-disc text-gray-700">
+                                <li>实用搭配：防水风衣（收纳方便）+ 弹性运动裤（长途飞行舒适）+ 透气帆布鞋</li>
+                                <li>行李整理：分装袋分类衣物（湿衣物用防水袋），证件放在胸前防盗包</li>
+                                <li>机场贴士：穿易脱鞋子（安检快速通行），外套选择无金属装饰款式</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mt-8 border-t border-gray-200 pt-6">
+                        <h3 class="section-title text-lg mb-4">交通提醒</h3>
+                        <p class="text-gray-700">参考航班HO1612（18:00-21:30），需提前3小时抵达关西机场，预留1小时办理退税托运行李</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- 注意事项 -->
+        <section class="bg-[var(--primary-color)]/80 text-black p-12 rounded-lg mt-16 shadow-2xl" aria-labelledby="notes-title">
+            <h3 id="notes-title" class="text-3xl font-bold mb-6">行前必读注意事项</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-medium mb-4 border-b border-gray-200 pb-2">证件准备</h4>
+                    <ul class="list-inside list-disc pl-4">
+                        <li>护照有效期需超过6个月（建议出行前检查有效期）</li>
+                        <li>提前打印酒店预订单、机票行程单（备纸质版以防网络问题）</li>
+                        <li>准备2张2寸白底证件照（用于紧急情况或签证补办）</li>
+                    </ul>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-medium mb-4 border-b border-gray-200 pb-2">货币支付</h4>
+                    <ul class="list-inside list-disc pl-4">
+                        <li>兑换3万日元现金（建议包含1000/5000面值，便利店/小餐馆常用）</li>
+                        <li>信用卡建议带VISA/Master（部分传统店铺不支持银联，JCB卡本地使用更便捷）</li>
+                        <li>支付宝/微信在大型商场覆盖率达90%（部分药妆店支持扫码支付立减优惠）</li>
+                    </ul>
+                </div>
+                <div class="bg-white text-gray-900 p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl font-medium mb-4 border-b border-gray-200 pb-2">安全贴士</h4>
+                    <ul class="list-inside list-disc pl-4">
+                        <li>地铁优先使用Suica交通卡（西瓜卡，可在任意车站自动售票机充值）</li>
+                        <li>酒店贵重物品存保险柜，外出背防盗背包（推荐防盗拉链款，防止扒窃）</li>
+                        <li>紧急电话：110（警察）/119（急救）/81-3-3201-3331（中国大使馆）</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-[var(--neutral-color)] text-black text-center p-12 mt-16">
+        <nav class="flex justify-center mb-4" aria-label="社交媒体链接">
+            <a href="#" class="text-2xl mx-2" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-2xl mx-2" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-2xl mx-2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </nav>
+        <p class="text-lg">© 2025 WilsonShi | 天气数据：日本气象厅 | 图片来源：Picsum.photos</p>
+        <p class="text-sm opacity-70">本页面采用响应式设计，建议使用Chrome/Safari浏览器获得最佳体验</p>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js" defer></script>
+</body>
+</html>
