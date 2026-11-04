@@ -20,10 +20,10 @@
 
 ## Nanjing
 
-- File: Confucius Temple and Qinhuai River, Nanjing Night
-- Source: https://commons.wikimedia.org/wiki/File:Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg
-- Author: Dick Rochester
-- License: Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)
-- License link: https://creativecommons.org/licenses/by-sa/2.0/
+- File: Statue of Sun Yat-sen in Xinjiekou, Nanjing, Jan 27 2023
+- Source: https://commons.wikimedia.org/wiki/File:Statue_of_Sun_Yat-sen_in_Xinjiekou,_Nanjing,_Jan_27_2023.jpg
+- Author: A Chinese ID
+- License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+- License link: https://creativecommons.org/licenses/by-sa/4.0/
 
 Images are used as representative city / campus scenes, not as Wilson Shi's own photography.
