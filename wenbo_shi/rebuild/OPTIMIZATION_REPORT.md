@@ -77,7 +77,7 @@
 
 - 新增完整英文页面：英文首页、项目、14 个英文详情、简历、档案与联系页；支持中英文切换，项目切换保留当前 id。
 - 学校补充：Columbia International College、University of Toronto + Sheridan College（New Media）、University of Melbourne。
-- 城市图片独立映射：CIC Maple Building、Wilson 自己拍摄的 Toronto、University of Melbourne Old Quad、Nanjing skyline。
+- 城市图片独立映射：CIC Maple Building、Wilson 自己拍摄的 Toronto、University of Melbourne main entrance、Confucius Temple and Qinhuai River。
 - Wikimedia 图片的作者、来源与许可证统一记录在 assets/ATTRIBUTION.md，Toronto 不显示外部署名。
 
 ## 后续技术说明

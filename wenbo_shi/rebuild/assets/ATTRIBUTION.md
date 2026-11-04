@@ -12,18 +12,18 @@
 
 ## Melbourne · University of Melbourne
 
-- File: Old Quad lawn, University of Melbourne, 2018
-- Source: https://commons.wikimedia.org/wiki/File:Old_Quad_lawn_University_of_Melbourne_2018.jpg
-- Author: Gracchus250
+- File: Unimelb main entrance
+- Source: https://commons.wikimedia.org/wiki/File:Unimelb_main_entrance.jpg
+- Author: Pollynolly
 - License: Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 - License link: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Nanjing
 
-- File: Skyline in Nanjing (20250325)
-- Source: https://commons.wikimedia.org/wiki/File:Skyline_in_Nanjing_(20250325).jpg
-- Author: Fumikas Sagisavas
-- License: CC0 1.0 Universal Public Domain Dedication
-- License link: https://creativecommons.org/publicdomain/zero/1.0/
+- File: Confucius Temple and Qinhuai River, Nanjing Night
+- Source: https://commons.wikimedia.org/wiki/File:Confucius_Temple_and_Qinhuai_River,_Nanjing_Night.jpg
+- Author: Dick Rochester
+- License: Creative Commons Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0)
+- License link: https://creativecommons.org/licenses/by-sa/2.0/
 
 Images are used as representative city / campus scenes, not as Wilson Shi's own photography.
