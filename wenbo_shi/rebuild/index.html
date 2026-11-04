@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="施文博（Wilson Shi），算法工程师、公司智能体平台负责人，关注企业级 Agent 平台、开源工具与影像创作。">
+<title>Wilson Shi · Algorithm Engineer · Agent Platform Lead</title>
+<link rel="stylesheet" href="assets/site.css"><link rel="stylesheet" href="assets/pages.css"><link rel="stylesheet" href="assets/refinements.css">
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="wordmark" href="#top" aria-label="回到首页"><span class="wordmark-dot">WS</span><strong>Wilson Shi</strong></a>
+    <nav class="main-nav" aria-label="主要导航"><a href="projects.html">做的东西</a><a href="#journey">一路经历</a><a href="archive.html">旧档案</a><a href="#about">关于我</a><a href="contact.html">联系</a><a href="en/index.html" hreflang="en" lang="en" data-language-switch="en" aria-label="Switch to English">EN</a></nav>
+    <div class="header-tools"><button class="text-button" id="themeToggle" type="button" aria-pressed="false">夜读</button><button class="text-button" id="motionToggle" type="button" aria-pressed="true">动效 开</button><button class="text-button resume-top" type="button" data-open-resume>简历</button></div>
+  </div>
+</header>
+<main id="main">
+<section class="hero" id="top">
+  <canvas id="field" aria-hidden="true"></canvas>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow hero-kicker">Personal frequency · Nanjing</p>
+      <h1>你好，<br>我是 Wilson.</h1>
+      <p class="hero-sub">我用代码构建工具，<br>也用<em>影像理解世界。</em></p>
+      <p class="hero-bio">我是施文博，现居南京。目前担任算法工程师、公司智能体平台负责人，也持续维护开源工具；曾经花很多时间在电影、摄影和手工模型上。这里放一些我做过的、正在做的，以及塑造过我的事情。</p>
+      <div class="hero-actions"><a class="button" href="#work">看看我做的东西 <span aria-hidden="true">↓</span></a><a class="underlink" href="#about">先认识一下我</a></div>
+      <p class="hero-note">代码、影像、城市与记忆，共同构成我的个人频率。你可以沿着四个信号，选择一种方式认识我。</p>
+    </div>
+    <div class="hero-visual" id="heroVisual">
+      <div class="photo-orbit" aria-hidden="true"></div>
+      <figure class="archive-photo" id="archivePhoto">
+        <img src="assets/img/pi.jpg" alt="本科时期，Wilson 拿着相机自拍">
+        <span class="archive-label">PHOTO / 摄影</span>
+        <figcaption class="photo-caption"><strong>摄影，是我观察世界的方式</strong></figcaption>
+      </figure>
+      <nav class="signal-nodes" aria-label="个人兴趣信号">
+        <a class="signal-node n1" href="projects.html"><span>01</span>CODE</a>
+        <a class="signal-node n2" href="#about"><span>02</span>CINEMA</a>
+        <a class="signal-node n3" href="archive.html"><span>03</span>PHOTO</a>
+        <a class="signal-node n4" href="#journey"><span>04</span>CITIES</a>
+      </nav>
+    </div>
+  </div>
+  <span class="scroll-cue">MOVE TO TUNE THE SIGNAL</span>
+</section>
+<section class="section" id="now">
+  <div class="page">
+    <div class="section-heading"><p class="eyebrow">01 / Right now</p><div><h2>此刻，我关心的事情。</h2></div></div>
+    <div class="now-grid">
+      <p class="now-quote">技术是工作，也是手艺。<br>电影和摄影，则是我理解世界的<span>另一种方式。</span></p>
+      <div class="now-list">
+        <article class="now-item"><h3>工作</h3><p>我目前担任算法工程师、公司智能体平台负责人，<strong>把一个想法从技术验证一路推到生产环境。</strong>我更在意它能不能稳定地进入同事的日常工作。</p></article>
+        <article class="now-item"><h3>开源</h3><p>我持续维护 DeepSeek Harness 生态的 7 个插件与工具，<strong>覆盖远程工作区、飞书、技能管理和 AI Coding。</strong>它们都来自真实使用中的问题。</p></article>
+        <article class="now-item"><h3>生活</h3><p>我仍保留对电影、摄影和创作的兴趣。<strong>本科辅修电影学</strong>，也画过画、做过模型；这些经历让我不只从工程角度看待工具与人。</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section" id="work">
+  <div class="page">
+    <div class="section-heading"><p class="eyebrow">02 / Things I make</p><div><h2>我做的，不只是项目列表。</h2><p>每一个东西背后都有一个真实问题。这里只挑几件愿意展开聊的。</p></div></div>
+    <div class="project-list">
+      <article class="project-row"><span class="project-number">01</span><div><h3>把 Agent 平台从 0 做到 1</h3><small>AGENT PLATFORM · WORK</small></div><p>我目前负责公司智能体平台，并从零发起、主导其建设，参与验证、架构、研发和生产交付。平台现在服务 4000+ 同事；更重要的是，它已经进入同事的日常工作。</p><a class="underlink project-link" href="project.html?id=agent-platform">打开档案 ↗</a></article>
+      <article class="project-row"><span class="project-number">02</span><div><h3>dsh-ssh-workspace</h3><small>OPEN SOURCE · REMOTE WORK</small></div><p>我把远程工作里真正会用到的本地缓存、冲突安全同步和远程终端，收进一个工作区。少切几次窗口，就多一点连续思考的时间。</p><a class="project-link" href="project.html?id=dsh-ssh-workspace">打开档案 ↗</a></article>
+      <article class="project-row"><span class="project-number">03</span><div><h3>ScholarMind</h3><small>MULTI-AGENT · RESEARCH</small></div><p>让多个 Agent 从不同角度讨论一篇论文，而不是只给一段摘要。它来自我对「怎样把复杂知识讲明白」这件事的兴趣。</p><a class="project-link" href="project.html?id=scholarmind">打开档案 ↗</a></article>
+      <article class="project-row"><span class="project-number">04</span><div><h3>Agent Platform Cookbook</h3><small>ENGINEERING NOTES · SANITIZED</small></div><p>把企业平台实践里可以公开的方法，整理成一本持续补充的工程笔记。不是晒架构图，而是留下别人真的用得上的经验。</p><a class="project-link" href="project.html?id=agent-platform-cookbook">打开档案 ↗</a></article>
+    </div><a class="section-link" href="projects.html">查看全部 14 个项目与详细档案 →</a>
+  </div>
+</section>
+<section class="section journey" id="journey">
+  <div class="page">
+    <div class="section-heading"><p class="eyebrow">03 / Places that shaped me</p><div><h2>一路生活过的地方。</h2><p>城市不只是简历上的地点，它们也改变了我看世界的方式。点击切换。</p></div></div>
+    <div class="city-tabs" role="tablist" aria-label="生活过的城市">
+      <button class="city-tab" role="tab" aria-selected="false" data-city="canada" id="tab-canada" aria-controls="cityPanel" tabindex="-1"><span>BEFORE UNIVERSITY</span>Canada · 哥伦比亚国际学院</button>
+      <button class="city-tab" role="tab" aria-selected="true" data-city="toronto" id="tab-toronto" aria-controls="cityPanel"><span>2017 — 2021</span>Toronto · 多伦多</button>
+      <button class="city-tab" role="tab" aria-selected="false" data-city="melbourne" id="tab-melbourne" aria-controls="cityPanel" tabindex="-1"><span>2021 — 2023</span>Melbourne · 墨尔本</button>
+      <button class="city-tab" role="tab" aria-selected="false" data-city="nanjing" id="tab-nanjing" aria-controls="cityPanel" tabindex="-1"><span>2023 — NOW</span>Nanjing · 南京</button>
+    </div>
+    <div class="city-panel" id="cityPanel" role="tabpanel" aria-labelledby="tab-toronto">
+      <div class="city-media" id="cityMedia"><img id="cityImage" src="assets/img/p10.jpg" alt="本科时期拍摄的多伦多街景"><div class="city-placeholder" id="cityPlaceholder" hidden><strong id="cityInitial">T</strong><span>THIS CHAPTER, IN WORDS</span></div><a class="city-credit" id="cityCredit" target="_blank" rel="noopener noreferrer" hidden>PHOTO CREDIT</a></div>
+      <div class="city-copy"><p class="city-year" id="cityYear">2017 — 2021 · CANADA</p><h3 id="cityTitle">在多伦多，学会生活。</h3><p class="city-story" id="cityStory">本科期间同时就读多伦多大学与 Sheridan College（New Media），并辅修计算机科学、电影学。那几年，我在课程、社团、摄影和视频制作之间来回切换，也慢慢学会在一个陌生的城市里建立自己的节奏。</p><p class="city-detail" id="cityDetail">「代码和电影，从那时开始一起成为我理解世界的方式。」</p></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="archive">
+  <div class="page">
+    <div class="section-heading"><p class="eyebrow">04 / From the archive</p><div><h2>几帧本科时期的旧档案。</h2></div></div>
+    <p class="archive-intro">在写平台代码之前，我就已经喜欢亲手做东西。这些绘画、手作和照片，记录了我学习观察与表达的过程。点击可以放大。</p>
+    <div class="archive-grid">
+      <button class="archive-card" type="button" data-full="assets/img/p11.JPG" data-caption="Flying Together · 本科时期的绘画档案"><img src="assets/img/p11.JPG" alt="本科时期绘制的两只鸟油画" loading="lazy"><span class="archive-caption"><span>Flying Together</span><span>PAINTING</span></span></button>
+      <button class="archive-card" type="button" data-full="assets/img/p12.jpg" data-caption="Eiffel Tower · 本科时期的手工模型"><img src="assets/img/p12.jpg" alt="本科时期制作的埃菲尔铁塔手工模型" loading="lazy"><span class="archive-caption"><span>Eiffel Tower</span><span>HANDMADE</span></span></button>
+      <button class="archive-card" type="button" data-full="assets/img/p14.JPG" data-caption="Lake Shore · 本科时期的铅笔素描"><img src="assets/img/p14.JPG" alt="本科时期绘制的湖岸风景素描" loading="lazy"><span class="archive-caption"><span>Lake Shore</span><span>SKETCH</span></span></button>
+    </div><a class="section-link" href="archive.html">进入完整的摄影、绘画、手作与影像档案 →</a>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="page about-grid">
+    <div><p class="eyebrow" style="margin-bottom:28px">05 / A little more about me</p><p class="about-letter">我喜欢有秩序的系统，也欣赏电影里的含混与留白。做工具时，我希望它可靠、清楚；生活里的我，则更享受观察、记录，以及和不同背景的人聊天。</p></div>
+    <div class="about-facts"><article class="fact"><h3>名字</h3><p>施文博，也可以叫我 Wilson。</p></article><article class="fact"><h3>现在</h3><p>算法工程师 · 公司智能体平台负责人 · 南京。</p></article><article class="fact"><h3>语言</h3><p>中文是母语，英语可以作为工作语言。</p></article><article class="fact"><h3>经历</h3><p>加拿大与澳大利亚学习生活，海外约十年。</p></article><article class="fact"><h3>兴趣</h3><p>电影、摄影、绘画，以及动手做小东西。</p></article><article class="fact"><h3>相信</h3><p>真材实料。做真实项目，也诚实说明哪些只是旧档案。</p></article></div>
+  </div>
+</section>
+<section class="contact" id="contact">
+  <div class="page"><p class="eyebrow" style="margin-bottom:26px">06 / Say hello</p><h2>如果你也对工具、电影<br>或一张好照片感兴趣，<br><a href="contact.html">来聊聊。</a></h2><div class="contact-links"><a href="mailto:1638083992@qq.com">写封邮件 ↗</a><a href="https://github.com/WilShi" target="_blank" rel="noopener noreferrer">GitHub / WilShi ↗</a><button class="underlink" type="button" data-open-resume>打开我的简历</button></div><footer class="footer"><span>Wilson Shi · 用代码、影像和记忆搭建的小站</span><span>NANJING, CHINA</span></footer></div>
+</section>
+</main>
+<dialog class="resume-dialog" id="resumeDialog" aria-labelledby="resumeTitle">
+  <div class="dialog-shell"><div class="dialog-top"><h2 id="resumeTitle">我的简历速览</h2><div class="resume-actions"><a class="ghost-button" href="resume.html">完整简历</a><button class="dialog-close" id="printResume" type="button">打印 / 保存 PDF</button><button class="dialog-close" id="closeResume" type="button">关闭</button></div></div>
+    <div class="resume-head"><div><h3>施文博 / Wilson Shi</h3><p>Algorithm Engineer · Agent Platform Lead · 南京</p></div><div><p><a href="mailto:1638083992@qq.com">1638083992@qq.com</a><br><a href="https://github.com/WilShi" target="_blank" rel="noopener noreferrer">github.com/WilShi</a></p></div></div>
+    <div class="resume-grid"><div><section class="resume-block"><h4>工作经历</h4><h5>某头部券商 · 信息技术部 · 算法工程师 / 公司智能体平台负责人</h5><p>2023.04 至今 · 南京</p><ul><li>发起并主导企业级智能体运行管控平台，覆盖技术验证、架构设计、主体研发与生产交付。</li><li>平台服务 4000+ 同事，累计发放 6000+ Agent 实例，日活用户超过 800；为营业部投资顾问提供 AI 数字分身能力。初期独立开发，后期带领 4 人协作迭代。</li><li>独立交付插件化企业 AI 桌面工作台；通用层 6 个插件独立开源。</li><li>此前负责约 300 个 Kafka 集群与 20 多个 Pulsar 集群的稳定性治理，并参与中间件管控、自动化巡检与自动化运维能力建设。</li></ul></section><section class="resume-block"><h4>其他实践</h4><p>模型能力评测平台：覆盖工具调用、长上下文、代码、数学、金融知识等八类维度。</p><p>数据与开发框架：多模态标注与清洗流水线、Python SDK、Java Spring AI 脚手架与在线 IDE。</p></section></div><aside><section class="resume-block"><h4>教育</h4><h5>墨尔本大学 · 硕士</h5><p>2021.07—2023.03<br>信息技术（人工智能方向）</p><h5>多伦多大学 · 本科</h5><p>2017.09—2021.06<br>通讯 / 文化 / 信息技术<br>辅修计算机科学、电影学</p></section><section class="resume-block"><h4>技能</h4><p>Python · TypeScript · Java · React</p><p>Agent 平台架构 · MCP · 多智能体 · 模型评测 · AI Coding 工具链</p><p>Kafka · Pulsar · Kubernetes · Docker · 分布式系统</p></section><section class="resume-block"><h4>工作之外</h4><p>英语可作工作语言。电影学辅修，持续关注摄影、绘画与影像创作。</p></section></aside></div>
+  </div>
+</dialog>
+<dialog class="lightbox" id="lightbox" aria-labelledby="lightboxCaption"><div class="lightbox-inner"><div class="lightbox-top"><span class="eyebrow">From the archive · 本科创作档案</span><button class="dialog-close" id="closeLightbox" type="button">关闭</button></div><img id="lightboxImage" alt=""><p id="lightboxCaption"></p></div></dialog>
+<script src="assets/home.js"></script>
+</body>
+</html>
