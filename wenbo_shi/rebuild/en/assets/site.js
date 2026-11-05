@@ -11,6 +11,8 @@ renderTheme();renderMotion();
 var page=document.body.dataset.page;document.querySelectorAll("[data-nav]").forEach(function(a){if(a.dataset.nav===page)a.setAttribute("aria-current","page")});
 document.querySelectorAll("[data-language-switch]").forEach(function(link){if(location.pathname.endsWith("/project.html")&&link.dataset.languageSwitch==="zh")link.href="../project.html"+location.search});
 document.querySelectorAll("[data-print]").forEach(function(button){button.addEventListener("click",function(){window.print()})});
+var backToTop=document.createElement("button");backToTop.type="button";backToTop.id="backToTop";backToTop.className="back-to-top";backToTop.textContent="↑ Top";backToTop.setAttribute("aria-label","Back to top");document.body.appendChild(backToTop);
+function updateBackToTop(){backToTop.classList.toggle("is-visible",window.scrollY>300)}window.addEventListener("scroll",updateBackToTop,{passive:true});updateBackToTop();backToTop.addEventListener("click",function(){window.scrollTo({top:0,behavior:motionEnabled?"smooth":"auto"})});
 var dialog=document.getElementById("commandDialog"),open=document.getElementById("commandOpen");
 if(!dialog||!open)return;
 var search=document.getElementById("commandSearch"),list=document.getElementById("commandList"),lastTrigger=null;

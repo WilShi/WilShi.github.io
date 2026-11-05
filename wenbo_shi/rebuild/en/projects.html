@@ -20,7 +20,7 @@
         <a data-nav="archive" href="archive.html">Archive</a>
         <a data-nav="about" href="index.html#about">About</a>
         <a data-nav="contact" href="contact.html">Contact</a>
-        <a href="../projects.html" lang="zh-CN" hreflang="zh-CN" aria-label="Chinese version">中文</a>
+        <a href="../projects.html" lang="zh-CN" hreflang="zh-CN" data-language-switch="zh" aria-label="Chinese version">中文</a>
       </nav>
       <div class="header-tools">
         <button class="text-button" id="themeToggle" type="button" aria-pressed="true">Light</button>
@@ -33,7 +33,7 @@
     <section class="page-hero">
       <div class="page page-hero-grid">
         <div><p class="eyebrow">SELECTED &amp; OPEN WORK</p><h1>Things I build.</h1></div>
-        <p>Four enterprise projects and ten open-source projects and engineering notes. Enterprise content has been sanitized, while open-source repositories are available directly. Every project starts with a real problem.</p>
+        <p>Six enterprise projects and ten open-source projects and engineering notes. Enterprise content has been sanitized, while open-source repositories are available directly. Every project starts with a real problem.</p>
       </div>
     </section>
     <section class="page-section">
@@ -46,12 +46,12 @@
           <div>
             <span class="filter-label">FILTER / Type</span>
             <div class="filter-buttons" role="group" aria-label="Project filters">
-              <button class="filter-button" data-filter="all" aria-pressed="true">All 14</button>
-              <button class="filter-button" data-filter="enterprise" aria-pressed="false">Enterprise 04</button>
+              <button class="filter-button" data-filter="all" aria-pressed="true">All 16</button>
+              <button class="filter-button" data-filter="enterprise" aria-pressed="false">Enterprise 06</button>
               <button class="filter-button" data-filter="open" aria-pressed="false">Open Source &amp; Notes 10</button>
             </div>
           </div>
-          <output class="result-count" id="resultCount">14 PROJECTS</output>
+          <output class="result-count" id="resultCount">16 PROJECTS</output>
         </div>
         <div class="catalog-list" id="projectList">
         <article class="catalog-row">
@@ -93,17 +93,41 @@
         <article class="catalog-row">
           <span class="catalog-number">04</span>
           <div>
-            <h2><a href="project.html?id=data-framework-sre">Data, Development Frameworks &amp; Messaging Infrastructure</a></h2>
-            <span class="catalog-kind">Enterprise Project · Platform Development / SRE</span>
+            <h2><a href="project.html?id=data-annotation">Data Annotation Platform &amp; Training Data Engineering</a></h2>
+            <span class="catalog-kind">Enterprise Project · Delivery Integration &amp; Data Engineering</span>
           </div>
           <div>
-            <p class="catalog-summary">Working on the lower layers of AI implementation, from data annotation and development scaffolding to production messaging systems.</p>
-            <ul class="catalog-tags"><li>Data Pipeline</li><li>Python SDK</li><li>Spring AI</li></ul>
+            <p class="catalog-summary">One track addresses task and quality management for multimodal data production; the other supports data preparation for LLM post-training / fine-tuning.</p>
+            <ul class="catalog-tags"><li>Multimodal Annotation</li><li>SSO</li><li>Data Pipeline</li></ul>
           </div>
-          <a class="catalog-link" href="project.html?id=data-framework-sre">Open project file ↗</a>
+          <a class="catalog-link" href="project.html?id=data-annotation">Open project file ↗</a>
         </article>
         <article class="catalog-row">
           <span class="catalog-number">05</span>
+          <div>
+            <h2><a href="project.html?id=middleware-operations">Intelligent Middleware Operations &amp; Kafka Management</a></h2>
+            <span class="catalog-kind">Enterprise Project · Platform Development / SRE</span>
+          </div>
+          <div>
+            <p class="catalog-summary">Connecting manual inspections, metric collection, anomaly detection, reporting and notifications, and Kafka governance into a sustainable engineering workflow.</p>
+            <ul class="catalog-tags"><li>Kafka</li><li>ZooKeeper</li><li>SRE</li></ul>
+          </div>
+          <a class="catalog-link" href="project.html?id=middleware-operations">Open project file ↗</a>
+        </article>
+        <article class="catalog-row">
+          <span class="catalog-number">06</span>
+          <div>
+            <h2><a href="project.html?id=developer-framework">Low-Code &amp; High-Code Development Framework</a></h2>
+            <span class="catalog-kind">Enterprise Project · Platform Development</span>
+          </div>
+          <div>
+            <p class="catalog-summary">Using SDKs, scaffolding, adapters, and an online IDE to bring AI capabilities into more business teams&#039; development workflows.</p>
+            <ul class="catalog-tags"><li>Python SDK</li><li>Spring AI</li><li>HiAgent</li></ul>
+          </div>
+          <a class="catalog-link" href="project.html?id=developer-framework">Open project file ↗</a>
+        </article>
+        <article class="catalog-row">
+          <span class="catalog-number">07</span>
           <div>
             <h2><a href="project.html?id=dsh-feishu">dsh-feishu</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -115,7 +139,7 @@
           <a class="catalog-link" href="project.html?id=dsh-feishu">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">06</span>
+          <span class="catalog-number">08</span>
           <div>
             <h2><a href="project.html?id=dsh-ssh-workspace">dsh-ssh-workspace</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -127,7 +151,7 @@
           <a class="catalog-link" href="project.html?id=dsh-ssh-workspace">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">07</span>
+          <span class="catalog-number">09</span>
           <div>
             <h2><a href="project.html?id=dsh-coding-agents">dsh-coding-agents</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -139,7 +163,7 @@
           <a class="catalog-link" href="project.html?id=dsh-coding-agents">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">08</span>
+          <span class="catalog-number">10</span>
           <div>
             <h2><a href="project.html?id=dsh-external-api">dsh-external-api</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -151,7 +175,7 @@
           <a class="catalog-link" href="project.html?id=dsh-external-api">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">09</span>
+          <span class="catalog-number">11</span>
           <div>
             <h2><a href="project.html?id=dsh-plugin-builder">dsh-plugin-builder</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -163,7 +187,7 @@
           <a class="catalog-link" href="project.html?id=dsh-plugin-builder">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">10</span>
+          <span class="catalog-number">12</span>
           <div>
             <h2><a href="project.html?id=dsh-connector-builder">dsh-connector-builder</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -175,7 +199,7 @@
           <a class="catalog-link" href="project.html?id=dsh-connector-builder">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">11</span>
+          <span class="catalog-number">13</span>
           <div>
             <h2><a href="project.html?id=dsh-skill-station">dsh-skill-station</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
@@ -187,7 +211,7 @@
           <a class="catalog-link" href="project.html?id=dsh-skill-station">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">12</span>
+          <span class="catalog-number">14</span>
           <div>
             <h2><a href="project.html?id=agent-platform-cookbook">agent-platform-cookbook</a></h2>
             <span class="catalog-kind">Engineering Notes · Independent Open Source</span>
@@ -199,7 +223,7 @@
           <a class="catalog-link" href="project.html?id=agent-platform-cookbook">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">13</span>
+          <span class="catalog-number">15</span>
           <div>
             <h2><a href="project.html?id=scholarmind">ScholarMind_MAS</a></h2>
             <span class="catalog-kind">Research Project · Independent Open Source</span>
@@ -211,7 +235,7 @@
           <a class="catalog-link" href="project.html?id=scholarmind">Open project file ↗</a>
         </article>
         <article class="catalog-row">
-          <span class="catalog-number">14</span>
+          <span class="catalog-number">16</span>
           <div>
             <h2><a href="project.html?id=kafka-pulsar-ops-toolkit">kafka-pulsar-ops-toolkit</a></h2>
             <span class="catalog-kind">Open-Source Tool · Independent Open Source</span>
