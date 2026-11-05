@@ -41,6 +41,7 @@ python3 -m http.server 8000
 - 子页面样式位于 `assets/pages.css`。
 - 全站审查后的可读性、排版与交互增强位于 `assets/refinements.css`。
 - 本轮完整优化与复验记录见 `OPTIMIZATION_REPORT.md`。
+- 逐页逐按钮的实际交互与导航验证见 `INTERACTION_REPORT.md`（本地与线上合计 924 项次）。
 - 主题、动效与命令面板位于 `assets/site.js`。
 - 首页交互位于 `assets/home.js`。
 - 照片统一放在站内 `assets/img/` 中，避免本地预览时加载上级目录失败；本科照片均明确标为旧档案。
