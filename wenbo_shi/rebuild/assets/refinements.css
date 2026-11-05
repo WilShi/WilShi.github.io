@@ -38,6 +38,17 @@ html[data-theme="night"]{color-scheme:dark;--grid:rgba(181,255,99,.055)}
 
 .resume-summary-line{padding:12px 0 18px;border-bottom:1px solid var(--line);color:var(--accent);font:11px/1.7 var(--mono);letter-spacing:.04em}.brief-project{padding:14px 0;border-top:1px solid var(--line)}.brief-project:first-child{border-top:0}.brief-project h5{margin-bottom:6px}.brief-project p{font-size:12px;line-height:1.75;color:var(--muted)}
 
+
+/* Gentle page and dialog transitions; progressive enhancement only */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:page-out .16s ease-out both}::view-transition-new(root){animation:page-in .18s ease-out both}
+@keyframes page-out{to{opacity:0;transform:translateY(-4px)}}@keyframes page-in{from{opacity:0;transform:translateY(4px)}}
+dialog[open]{animation:dialog-in .18s ease-out both}dialog[open]::backdrop{animation:backdrop-in .18s ease-out both}
+@keyframes dialog-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes backdrop-in{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){::view-transition-old(root),::view-transition-new(root){animation:none!important}dialog[open],dialog[open]::backdrop{animation:none!important}}
+html[data-motion="off"] ::view-transition-old(root),html[data-motion="off"] ::view-transition-new(root){animation:none!important}html[data-motion="off"] dialog[open],html[data-motion="off"] dialog[open]::backdrop{animation:none!important}
+@media print{dialog[open],dialog[open]::backdrop{animation:none!important}}
+
 /* Interaction and printing edge cases */
 html[data-motion="off"]{scroll-behavior:auto!important}html[data-motion="off"] *{animation:none!important;transition:none!important}
 .resume-doc-head a{min-height:44px;display:inline-flex;align-items:center}
