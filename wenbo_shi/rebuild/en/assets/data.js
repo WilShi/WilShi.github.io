@@ -7,44 +7,44 @@ window.WILSON_PROJECTS = [
     "category": "enterprise",
     "categoryLabel": "Enterprise Project",
     "role": "Platform Lead (Initiated & Led)",
-    "summary": "Taking an idea from technical validation to production and bringing Agent capabilities into everyday work.",
-    "description": "I currently work as an algorithm engineer and lead the company's Agent platform. I initiated and led the enterprise Agent operations and governance platform from scratch, contributing to early technical validation, solution and architecture design, core development, production delivery, and continuous iteration. Only sanitized, publicly shareable information is presented here.",
-    "challenge": "An enterprise Agent platform must accommodate multiple frameworks, real workflows, production delivery, and ongoing governance. My primary concern is whether people will actually keep using the system.",
+    "summary": "Took an idea through technical validation and into production, bringing agent capabilities into everyday work.",
+    "description": "I am an algorithm engineer and the lead of my company's agent platform. I initiated and led this enterprise agent operations and governance platform from concept to production, spanning early technical validation, solution and architecture design, core development, production delivery, and ongoing iteration. This page includes only sanitized information that can be shared publicly.",
+    "challenge": "An enterprise agent platform must support multiple frameworks and real workflows while meeting production and ongoing governance needs. My focus is whether people will actually continue using it.",
     "capabilities": [
       {
         "title": "Instance Lifecycle & Platform Governance",
         "items": [
-          "Established lifecycle management, trusted access, and a unified delivery path for Agent instances",
-          "Covered technical validation, solution and architecture design, core development, production delivery, and continuous iteration",
-          "Supported instance management, operations governance, and subsequent rollout through platform capabilities"
+          "Manages the agent instance lifecycle, trusted access, and unified delivery",
+          "Covers technical validation, solution and architecture design, core development, production delivery, and continuous iteration",
+          "Provides a platform foundation for instance management, operational control, and wider rollout"
         ]
       },
       {
         "title": "Multi-Framework & Channel Integration",
         "items": [
-          "Used OpenClaw as the primary production framework and completed integration validation for ZeroClaw / DeepSeek Harness",
-          "Completed technical integration and joint debugging for channels including Feishu, and advanced authorization processes for business-side integration",
-          "Validated integration and management across coexisting frameworks rather than only delivering a single-chat demonstration"
+          "Uses OpenClaw as the primary production framework, with validated ZeroClaw / DeepSeek Harness integrations",
+          "Covers technical integration and joint testing for channels such as Feishu, together with the authorization process for business onboarding",
+          "Validates integration and management across coexisting frameworks, not just a single-chat demo"
         ]
       },
       {
         "title": "Team Collaboration & Business Delivery",
         "items": [
-          "Developed independently at first, then led a four-person team through subsequent iterations and mentored two campus hires",
-          "Provided AI digital-twin capabilities to investment advisors at branch offices, supporting real business workflows",
-          "Continuously iterated and scaled platform adoption based on production feedback"
+          "Started as a solo effort, then led a four-person team and mentored two campus hires",
+          "Provides AI digital avatars for branch-based investment advisors, supporting real business workflows",
+          "Uses production feedback to drive continuous iteration and broader adoption"
         ]
       }
     ],
     "contributions": [
       "Completed 0-to-1 technical validation, architecture design, and core development",
-      "Used OpenClaw as the primary production framework and validated ZeroClaw / DeepSeek Harness integrations",
-      "Developed independently at first, then led a four-person team through subsequent iterations and mentored two campus hires"
+      "Made OpenClaw the primary production framework and validated ZeroClaw / DeepSeek Harness integrations",
+      "Started solo, then led a four-person team and mentored two campus hires"
     ],
     "outcomes": [
-      "Serves more than 4,000 colleagues across nearly every department in the company",
-      "Provides AI digital-twin capabilities to investment advisors at branch offices",
-      "Has provisioned more than 6,000 Agent instances, with over 800 daily active users"
+      "Serves 4,000+ colleagues across nearly every company department",
+      "Provides AI digital avatars for branch-based investment advisors",
+      "Has provisioned 6,000+ agent instances and serves 800+ daily active users"
     ],
     "tags": [
       "Agent Platform",
@@ -54,7 +54,7 @@ window.WILSON_PROJECTS = [
       "Production Delivery"
     ],
     "link": "https://github.com/WilShi/agent-platform-cookbook",
-    "linkLabel": "View Sanitized Engineering Patterns"
+    "linkLabel": "View sanitized engineering patterns"
   },
   {
     "id": "ai-workbench",
@@ -63,55 +63,55 @@ window.WILSON_PROJECTS = [
     "short": "AI Workbench",
     "category": "enterprise",
     "categoryLabel": "Enterprise Project",
-    "role": "Independent Delivery",
-    "summary": "Bringing AI chat, Agent capabilities, and the development and office toolchain into one ready-to-use desktop application.",
-    "description": "I independently delivered an enterprise AI desktop workbench built on the DeepSeek Harness plugin architecture. Rather than a single chat window, it brings files, terminals, Git, SSH remote workspaces, and coding assistant sessions into a unified workflow. Every feature below is a module that has actually been run successfully. An internal test version has been delivered; later releases continue to improve installation and upgrades, signing, and acceptance testing with real services.",
-    "challenge": "The biggest obstacle to efficiency is often not the lack of another AI chat box, but the fragmentation of context and tools. A layered plugin architecture allows general-purpose and company-specific capabilities to be maintained separately, making delivery clearer as well.",
+    "role": "Delivered Independently",
+    "summary": "A ready-to-use desktop app that unifies AI chat, agents, and development and office tools.",
+    "description": "I independently delivered this enterprise AI desktop workbench on the DeepSeek Harness plugin architecture. It combines files, terminals, Git, SSH remote workspaces, and coding assistant sessions in one workflow rather than another standalone chat window. All modules listed below have been run and verified. An internal test build has been delivered, with installation, upgrades, signing, and acceptance testing against real services continuing in later releases.",
+    "challenge": "The main barrier to efficiency is often fragmented context and tooling, not the lack of another AI chat window. A layered plugin architecture separates general-purpose capabilities from company-specific ones, simplifying maintenance and delivery.",
     "capabilities": [
       {
         "title": "Model Gateway & Runtime Environment",
         "items": [
-          "Adapted to company model authorization discovery, provider configuration, and default model selection, reusing official model and credential services",
-          "Allowed company gateways to be added as needed in Settings without blocking basic startup when company API keys are absent",
-          "Pinned Node / Python / pnpm and native dependencies, with offline materialization of workspace dependencies and preservation of previous environments"
+          "Supports company model authorization discovery, provider configuration, and default model selection while reusing official model and credential services",
+          "Allows optional company gateways in Settings; missing company API keys do not block basic startup",
+          "Pins Node / Python / pnpm and native dependencies, supports offline workspace dependency materialization, and preserves previous environments"
         ]
       },
       {
         "title": "File & Office Workbench",
         "items": [
-          "Integrated a file tree, text and code editing, Git, a terminal, and media / HTML previews",
-          "Version-checked saves prevent silent overwrites of external changes",
-          "Supported preview paths for Word / PPT / WPS to PDF conversion without claiming lossless online editing for every format"
+          "Combines a file tree, text and code editing, Git, a terminal, and media / HTML previews",
+          "Checks versions before saving to prevent silent overwrites of external changes",
+          "Previews Word / PPT / WPS files through PDF conversion without claiming lossless online editing for every format"
         ]
       },
       {
         "title": "Memory & Knowledge Context",
         "items": [
-          "Stored sources, entities, relationships, and usage policies in a SQLite sidecar, supporting layered and scoped recall",
-          "Provided document knowledge bases, source associations, and interactive 2D / 3D graphs",
-          "Local memory lifecycle and Chinese Markdown lexical search were verified in practice; semantic distillation remains under integration and acceptance testing with company services"
+          "Uses a SQLite sidecar for sources, entities, relationships, and usage policies, with layered and scoped recall",
+          "Includes document knowledge bases, source links, and interactive 2D / 3D graphs",
+          "Local memory lifecycle and Chinese Markdown lexical search have been verified; semantic distillation continues through integration and acceptance testing with company services"
         ]
       },
       {
         "title": "Connectors & Coding Tools",
         "items": [
-          "Centrally managed connector catalogs, credential forms, enable/disable controls, checks, and MCP tools",
-          "Extended company search providers, Feishu long-lived connections, and streaming card interactions",
-          "Bridged native coding tool events through Codex App Server / Claude Agent SDK",
-          "Six general-purpose plugins have been open-sourced independently, with general-purpose and company-specific capabilities maintained separately"
+          "Manages connector catalogs, credential forms, enable/disable controls, checks, and MCP tools",
+          "Extends company search providers, Feishu persistent connections, and streaming card interactions",
+          "Bridges native coding tool events through Codex App Server / Claude Agent SDK",
+          "Six general-purpose plugins are independently open source; general-purpose and company-specific capabilities are maintained separately"
         ]
       }
     ],
     "contributions": [
-      "Independently delivered a desktop workbench based on the DeepSeek Harness plugin architecture",
-      "Integrated AI chat, Agents, file preview and editing, terminals, and Git",
-      "Added SSH remote workspaces, coding assistant session management, and integrations with existing company services",
-      "Maintained general-purpose and company-specific capabilities in separate layers"
+      "Independently delivered the DeepSeek Harness plugin-based desktop workbench",
+      "Integrated AI chat, agents, file preview and editing, terminals, and Git",
+      "Integrated SSH remote workspaces, coding assistant session management, and existing company services",
+      "Separated general-purpose and company-specific capabilities into independently maintained layers"
     ],
     "outcomes": [
-      "Created a ready-to-use AI work entry point for the company",
-      "Six general-purpose plugins have been open-sourced independently",
-      "An internal test version has been delivered; subsequent candidate releases continue to improve installation, upgrades, signing, and acceptance testing with real services"
+      "Created a ready-to-use internal AI work hub for the company",
+      "Released six general-purpose plugins as independent open-source projects",
+      "Delivered an internal test build; later release candidates continue to improve installation, upgrades, signing, and acceptance testing with real services"
     ],
     "tags": [
       "Plugin Architecture",
@@ -120,7 +120,7 @@ window.WILSON_PROJECTS = [
       "AI Coding"
     ],
     "link": "https://github.com/WilShi",
-    "linkLabel": "View Related Open-Source Projects"
+    "linkLabel": "View related open-source projects"
   },
   {
     "id": "model-evaluation",
@@ -130,52 +130,52 @@ window.WILSON_PROJECTS = [
     "category": "enterprise",
     "categoryLabel": "Enterprise Project",
     "role": "Platform Development",
-    "summary": "Using consistent, comparable dimensions to help the organization understand what different models do best.",
-    "description": "I helped build a model capability evaluation platform covering eight evaluation dimensions, including tool calling, long context, code, mathematics, and financial knowledge. It supports horizontal evaluation across multiple models and deployment methods. The base framework, web service, and LLM-EvalHub respectively handle configuration execution, the task entry point, and the complete analysis workflow.",
-    "challenge": "Model names and parameter counts cannot directly answer whether a model suits our work. What we really need is repeatable, comparable evidence of capability, so model selection does not rely on intuition alone.",
+    "summary": "Helps the organization compare model strengths across consistent dimensions.",
+    "description": "I helped build a platform that evaluates eight dimensions of model capability, including tool calling, long context, coding, mathematics, and financial knowledge. It compares multiple models and deployment methods. The base framework executes configured evaluations, the web service provides the task interface, and LLM-EvalHub supports the complete analysis workflow.",
+    "challenge": "A model's name and parameter count cannot tell us whether it fits our work. We need repeatable, comparable evidence of capability so selection is based on more than intuition.",
     "capabilities": [
       {
         "title": "Datasets & Evaluation Dimensions",
         "items": [
-          "Supports CSV / JSONL / JSON / XLSX upload, parsed previews, versioning, and format detection",
-          "Configures dimension names, associated datasets, evaluators, scoring criteria, and custom Judges / Prompts",
-          "Covers tool calling, long context, code, mathematics, financial knowledge, text similarity, format following, and more"
+          "Uploads and parses CSV / JSONL / JSON / XLSX files, with previews, versioning, and format detection",
+          "Configures dimension names, linked datasets, evaluators, scoring criteria, and custom judges / prompts",
+          "Covers tool calling, long context, coding, mathematics, financial knowledge, text similarity, format compliance, and more"
         ]
       },
       {
         "title": "Async Tasks & Resumable Execution",
         "items": [
-          "Supports task creation, item-by-item execution, pause, resume, rerun, and cancellation, with progress and detailed results",
-          "Uses asyncio, Semaphore, and progress locks to coordinate background tasks, persists each item independently, and pushes progress updates",
-          "Resumes by dimension, dataset, and item number to skip completed items instead of repeating execution from the beginning"
+          "Creates and runs item-level tasks with pause, resume, rerun, and cancellation, plus progress and detailed results",
+          "Uses asyncio, Semaphore, and progress locks to coordinate background tasks, with per-item persistence and progress updates",
+          "Skips completed items on resume by dimension, dataset, and item number rather than restarting from scratch"
         ]
       },
       {
         "title": "Twelve Evaluators & Data Processing",
         "items": [
-          "Provides exact_match, contains, regex, multiple_choice, math_answer, fin_qa, tool_call, f1, bleu, rouge_l, code_exec, and geval evaluators",
-          "Calculates Precision / Recall / F1 from tool-call labels without presenting tool-name matches as proof of correct execution",
-          "The tool-call data pipeline supports request filtering, normalization, MD5 deduplication, SimHash near-deduplication, caching, and output format configuration"
+          "Includes exact_match, contains, regex, multiple_choice, math_answer, fin_qa, tool_call, f1, bleu, rouge_l, code_exec, and geval evaluation methods",
+          "Calculates Precision / Recall / F1 from tool-call labels without treating tool-name matches as proof of correct execution",
+          "The tool-call data pipeline supports request filtering, normalization, MD5 deduplication, SimHash near-deduplication, caching, and configurable output formats"
         ]
       },
       {
         "title": "Comparative Analysis & Playground",
         "items": [
           "Provides dimension statistics, radar and bar charts, multi-task comparisons, and CSV / JSON export",
-          "Pairwise supports A / B / TIE judgments and statistics for two outputs",
-          "Multiple models can chat side by side with streaming output, Markdown, and Thinking displays"
+          "Supports pairwise A / B / TIE judgments and statistics for two outputs",
+          "Supports side-by-side chats with multiple models, including streaming output, Markdown, and Thinking views"
         ]
       }
     ],
     "contributions": [
-      "Covered eight dimensions of real-world capability evaluation",
-      "Supported horizontal comparisons across different models and deployment methods",
-      "Used evaluation results to inform model selection within the organization"
+      "Covered eight real-world capability dimensions",
+      "Enabled comparisons across models and deployment methods",
+      "Applied evaluation results to model selection within the organization"
     ],
     "outcomes": [
-      "Established a unified workflow for datasets, dimensions, asynchronous tasks, and comparative analysis",
-      "Provided an explainable basis for model selection",
-      "Development is complete, with validation deployment in the test environment; production rollout will undergo separate acceptance testing"
+      "Unified datasets, dimensions, asynchronous tasks, and comparative analysis in one workflow",
+      "Provides explainable evidence for model selection",
+      "Development is complete and deployed for validation in the test environment; production rollout requires separate acceptance testing"
     ],
     "tags": [
       "Model Evaluation",
@@ -194,44 +194,44 @@ window.WILSON_PROJECTS = [
     "category": "enterprise",
     "categoryLabel": "Enterprise Project",
     "role": "Delivery Integration & Data Engineering",
-    "summary": "One track addresses task and quality management for multimodal data production; the other supports data preparation for LLM post-training / fine-tuning.",
-    "description": "I advanced delivery integration for a multimodal annotation platform and contributed to data tooling for post-training / fine-tuning. The vendor system and in-house tools are two separate tracks: the former focused on requirements coordination, authentication, and company service integration; the latter on document processing, generation, filtering, and dataset preparation.",
-    "challenge": "An annotation platform is more than an interface for drawing boxes. The real challenges are task assignment, role separation, multiple rounds of quality inspection, company system integration, and turning raw material into data that can be used for training.",
+    "summary": "Covers task and quality management for multimodal data production, alongside data preparation for LLM post-training and fine-tuning.",
+    "description": "I drove delivery integration for a multimodal annotation platform and contributed to data tools for post-training and fine-tuning. These were separate tracks: the vendor system focused on requirements coordination, authentication, and company service integration, while the in-house tools covered document processing, generation, filtering, and dataset preparation.",
+    "challenge": "Annotation is more than a box-drawing interface. The hard problems are task assignment, role separation, multi-round quality control, company system integration, and converting raw material into training-ready data.",
     "capabilities": [
       {
         "title": "Multimodal Task Workflows",
         "items": [
-          "Covers requirements intake, upload preparation, cleaning and optional pre-annotation, task assignment, annotation, quality inspection, return for re-annotation, acceptance, and export",
-          "Supports assignment by person, ratio, quantity, or task pool, with reclamation or transfer of unprocessed tasks",
-          "Separates annotation, inspection, and acceptance roles, with different rounds avoiding assignment to the same inspector"
+          "Covers requirements intake, upload preparation, cleaning, optional pre-annotation, assignment, annotation, quality inspection, rework, acceptance, and export",
+          "Assigns work by person, ratio, quantity, or task pool, and allows unprocessed tasks to be reclaimed or transferred",
+          "Separates annotation, inspection, and acceptance roles, and avoids assigning the same inspector to different rounds"
         ]
       },
       {
         "title": "Enterprise Integration & Assisted Annotation",
         "items": [
-          "Integrates enterprise SSO, users / organizations / tenants, and default roles",
-          "Connects existing company LLM, OCR, and document parsing capabilities for pre-annotation and processing",
-          "Delivery focused on dialogue, text, images, and 12+ specialized templates, rather than claiming every product-manual feature as personal development"
+          "Supports enterprise SSO, users / organizations / tenants, and default roles",
+          "Uses existing company LLM, OCR, and document parsing services for pre-annotation and processing",
+          "Delivery focused on dialogue, text, images, and 12+ specialized templates; features from the product manual are not presented as entirely self-developed"
         ]
       },
       {
-        "title": "Post-Training / Fine-Tuning Data Preparation",
+        "title": "Post-Training & Fine-Tuning Data Preparation",
         "items": [
           "Supports project and model configuration, document upload, chunking, and domain-tree organization",
-          "Generates questions, answers, or training records from text chunks, followed by manual confirmation, scoring, filtering, and export",
-          "Covers data models including Chunks, Questions, Datasets, CoT, dialogue data, label trees, and evaluation datasets"
+          "Generates questions, answers, or training records from chunks for manual review, scoring, filtering, and export",
+          "Includes Chunks, Questions, Datasets, CoT, dialogue data, label trees, and evaluation datasets"
         ]
       }
     ],
     "contributions": [
-      "Coordinated requirements, vendors, delivery quality, and deployment in the company environment",
-      "Advanced integration of authentication, model-assisted parsing, and task workflows",
-      "Contributed to data preparation and cleaning pipelines for post-training / fine-tuning"
+      "Coordinated requirements, vendor collaboration, delivery quality, and deployment in the company environment",
+      "Integrated authentication, model-assisted parsing, and task workflows",
+      "Contributed to data preparation and cleaning pipelines for post-training and fine-tuning"
     ],
     "outcomes": [
-      "The iFlytek annotation system went live on July 1, 2026, operated normally during its July trial, and completed signed acceptance on July 31, 2026",
-      "Launch and acceptance evidence is available; test deployment of the in-house post-training platform is not conflated with the vendor system",
-      "Vendor and open-source baseline features are not all claimed as original personal work"
+      "The iFlytek annotation system launched on July 1, 2026, ran normally during its July trial, and was formally accepted with sign-off on July 31, 2026",
+      "Launch and acceptance evidence is available; the in-house post-training platform's test deployment is distinct from the vendor system",
+      "Does not claim all vendor or open-source baseline functionality as original personal work"
     ],
     "tags": [
       "Multimodal Annotation",
@@ -250,53 +250,53 @@ window.WILSON_PROJECTS = [
     "category": "enterprise",
     "categoryLabel": "Enterprise Project",
     "role": "Platform Development / SRE",
-    "summary": "Connecting manual inspections, metric collection, anomaly detection, reporting and notifications, and Kafka governance into a sustainable engineering workflow.",
-    "description": "During my time on the middleware team, I advanced metric collection, standardized inspections, anomaly diagnosis, reporting and notifications, and governance tracking around Kafka, ZooKeeper, and other components, while contributing to Topics, permissions, configuration, version upgrades, and container migration. This work includes continuously operating tools and processes, as well as intelligent diagnostic capabilities developed in later iterations.",
-    "challenge": "With many components and inconsistent configurations and runtime environments, checking graphs machine by machine and inspecting items individually can miss disk capacity issues, consumer backlogs, configuration drift, and health changes. Governance needs a continuous process of collection, detection, reporting, and handling, not just monitoring dashboards.",
+    "summary": "Brings manual inspections, metric collection, anomaly detection, reporting, notifications, and Kafka governance into a sustainable engineering workflow.",
+    "description": "On the middleware team, I worked on metric collection, standardized inspections, anomaly diagnosis, reporting, notifications, and governance tracking for Kafka, ZooKeeper, and other components. I also contributed to topics, permissions, configuration, version upgrades, and container migration. The work includes tools and processes in continuous use, as well as intelligent diagnostics developed in later iterations.",
+    "challenge": "With many components and inconsistent configurations and environments, machine-by-machine dashboard checks and manual inspection can miss disk capacity issues, consumer backlogs, configuration drift, and health changes. Governance requires a continuous workflow for collection, detection, reporting, and follow-up, not dashboards alone.",
     "capabilities": [
       {
         "title": "Metric Collection & Standardized Inspection",
         "items": [
-          "Collects ZooKeeper status through mntr / ruok / stat and converts it into Prometheus metrics",
-          "Assesses Kafka health using ActiveControllerCount, OfflinePartitionsCount, UnderReplicatedPartitions, and thread status",
-          "Configuration-driven component, cluster, node, and metric tasks support scheduled execution, result retention, and tracking"
+          "Collects ZooKeeper status with mntr / ruok / stat and converts it into Prometheus metrics",
+          "Assesses Kafka health through ActiveControllerCount, OfflinePartitionsCount, UnderReplicatedPartitions, and thread status",
+          "Uses configuration-driven component, cluster, node, and metric tasks with scheduling, result storage, and tracking"
         ]
       },
       {
         "title": "Anomaly Detection & Model Fallback",
         "items": [
-          "Supports configurable thresholds, exemptions, and isolation-forest anomaly detection",
-          "Trains models by hour and time period, falls back to default models when data is insufficient, and uses caching with multi-level concurrent execution",
-          "Historical trends are generated with Pandas / NumPy / Matplotlib; trend charts are not presented as neural-network forecasts"
+          "Supports configurable thresholds, exemptions, and isolation forest anomaly detection",
+          "Trains models by hour and time period, falls back to defaults when data is insufficient, and uses caching and multi-level concurrency",
+          "Generates historical trends with Pandas / NumPy / Matplotlib without presenting trend charts as neural-network forecasts"
         ]
       },
       {
         "title": "Reporting, Notifications & Governance Tracking",
         "items": [
-          "Outputs CSV / TXT / HTML inspection reports, summaries, low-watermark matrices, and component trends",
-          "Supports ticket assignment and reminders through email and report publication, closing the loop between tooling and manual operations",
-          "Supports trading-day inspections, weekly summaries, and notifications for sudden watermark increases or decreases"
+          "Generates CSV / TXT / HTML inspection reports, summaries, low-watermark matrices, and component trends",
+          "Uses email and report publication to support ticket assignment and reminders, combining tooling with manual operations",
+          "Supports trading-day inspections, weekly summaries, and alerts for sudden watermark rises or drops"
         ]
       },
       {
         "title": "Kafka Administration & Migration Engineering",
         "items": [
-          "Covers Topic creation, details, listing, configuration updates, partition reassignment, and message query and export",
-          "Supports ACL / SCRAM users, permission query, addition, and revocation, credential rotation, and authentication validation",
-          "Validates Offset / Lag, consumer group status, and restricted resets; test environments support message production for joint debugging",
-          "Advanced configuration standardization, version compatibility, Helm deployment and scaling validation, and coordination of business container migration"
+          "Covers topic creation, details, listing, configuration updates, partition reassignment, and message search and export",
+          "Supports ACL / SCRAM users, permission lookup, grants and revocation, credential rotation, and authentication checks",
+          "Validates offset / lag, consumer group status, and restricted resets; test environments support message production for integration testing",
+          "Supports configuration standardization, version compatibility, Helm deployment and scaling tests, and coordination of business container migrations"
         ]
       }
     ],
     "contributions": [
       "Managed stability for approximately 300 Kafka clusters and more than 20 Pulsar clusters",
-      "Built messaging middleware management and control capabilities, supported by platform-based automated inspection and operations for the team",
-      "Advanced tools for Topics, permissions, configuration, version compatibility, and migration"
+      "Built platform-based messaging middleware management, automated inspection, and operations capabilities for the team",
+      "Advanced tooling for topics, permissions, configuration, version compatibility, and migration"
     ],
     "outcomes": [
-      "Established automated inspection and operations platform capabilities across the middleware team",
-      "Historical inspection reports and governance processes remain in use, supporting configuration, capacity, and stability governance",
-      "Completed 18 Kafka-related operations tools and built a feature controller compatible with multiple Kafka versions"
+      "Established a middleware team platform for automated inspections and operations",
+      "Historical inspection reports and governance workflows remain in use for configuration, capacity, and stability management",
+      "Completed 18 Kafka operations tools and a feature controller supporting multiple Kafka versions"
     ],
     "tags": [
       "Kafka",
@@ -306,44 +306,44 @@ window.WILSON_PROJECTS = [
       "Migration"
     ],
     "link": "https://github.com/WilShi/kafka-pulsar-ops-toolkit",
-    "linkLabel": "View Related Operations Toolkit"
+    "linkLabel": "View related operations toolkit"
   },
   {
     "id": "developer-framework",
     "number": "06",
-    "title": "Low-Code & High-Code Development Framework",
+    "title": "Low-Code & Pro-Code Development Framework",
     "short": "Developer Framework",
     "category": "enterprise",
     "categoryLabel": "Enterprise Project",
     "role": "Platform Development",
-    "summary": "Using SDKs, scaffolding, adapters, and an online IDE to bring AI capabilities into more business teams' development workflows.",
-    "description": "I contributed to a Python SDK, Java Spring AI scaffolding, HiAgent Adapter, and an online IDE, helping teams with different technical backgrounds use models and Agent capabilities in a unified way.",
-    "challenge": "If only a small number of people familiar with low-level interfaces can use model capabilities, those capabilities will struggle to reach more business scenarios. Development frameworks need to package authentication, invocation, orchestration, and debugging into reusable engineering entry points.",
+    "summary": "Helps business teams integrate AI through SDKs, scaffolding, adapters, and an online IDE.",
+    "description": "I contributed to a Python SDK, Java Spring AI scaffolding, HiAgent Adapter, and an online IDE, giving teams with different technical backgrounds a consistent way to use models and agents.",
+    "challenge": "Model capabilities are unlikely to reach broader business use if only specialists in low-level APIs can access them. Development frameworks must turn authentication, invocation, orchestration, and debugging into reusable engineering entry points.",
     "capabilities": [
       {
         "title": "SDKs & Scaffolding",
         "items": [
-          "Provides a Python SDK to lower the barrier to calling models and workflows",
-          "Provides Java Spring AI scaffolding to standardize business integration",
-          "Uses HiAgent Adapter to connect existing business systems with Agent capabilities"
+          "Simplifies model and workflow calls through a Python SDK",
+          "Standardizes business integration with Java Spring AI scaffolding",
+          "Connects existing business systems to agent capabilities through HiAgent Adapter"
         ]
       },
       {
         "title": "Online Development & Debugging",
         "items": [
-          "Built an online IDE for development, debugging, and integration validation",
-          "Allows business teams to start without rebuilding low-level authentication and interface details",
-          "Forms a supporting development chain with data annotation, model evaluation, and the Agent platform"
+          "Provides an online IDE for development, debugging, and integration testing",
+          "Removes the need for business teams to rebuild low-level authentication and API handling",
+          "Complements data annotation, model evaluation, and the agent platform in a connected development toolchain"
         ]
       }
     ],
     "contributions": [
       "Contributed to the Python SDK, Java Spring AI scaffolding, and HiAgent Adapter",
-      "Contributed to the online IDE and related development and debugging capabilities"
+      "Contributed to the online IDE and related development and debugging tools"
     ],
     "outcomes": [
-      "Related development capabilities support more than 100 developers",
-      "Serves multiple business departments and provides an engineering foundation for subsequent Agent platform development"
+      "Supports more than 100 developers",
+      "Used by multiple business departments, providing an engineering foundation for later agent platform development"
     ],
     "tags": [
       "Python SDK",
@@ -361,18 +361,18 @@ window.WILSON_PROJECTS = [
     "short": "Feishu Interface",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "Bringing DeepSeek Harness into Feishu with streaming cards for conversations, questions, and approvals.",
-    "description": "A Feishu / Lark chat interface that brings DeepSeek Harness interactions into a team's everyday communication tool. It goes beyond messaging to cover streaming cards, in-card questions and approvals, and a friendlier configuration process.",
-    "challenge": "Agent capabilities move closer to everyday work only when they enter real communication scenarios. In-card interactions can reduce switching between tools.",
+    "role": "Independent Open-Source Developer",
+    "summary": "Brings DeepSeek Harness to Feishu with streaming cards for conversations, questions, and approvals.",
+    "description": "A Feishu / Lark chat interface that brings DeepSeek Harness into everyday team communication. Beyond messaging, it supports streaming cards, in-card questions and approvals, and a more approachable configuration process.",
+    "challenge": "Agents move closer to everyday work when they operate within real communication flows. In-card interactions reduce tool switching.",
     "contributions": [
-      "Implemented streaming conversation cards in Feishu",
-      "Supported in-card questions and approvals",
-      "Provided wizard-based configuration to reduce integration overhead"
+      "Implemented streaming chat cards in Feishu",
+      "Added in-card questions and approvals",
+      "Provided wizard-based setup to simplify integration"
     ],
     "outcomes": [
-      "Released under the MIT License",
-      "Serves as a Feishu chat entry point for DeepSeek Harness"
+      "Open-sourced under the MIT License",
+      "Provides a Feishu chat interface for DeepSeek Harness"
     ],
     "tags": [
       "Feishu",
@@ -381,7 +381,7 @@ window.WILSON_PROJECTS = [
       "DeepSeek Harness"
     ],
     "link": "https://github.com/WilShi/dsh-feishu",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "dsh-ssh-workspace",
@@ -390,18 +390,18 @@ window.WILSON_PROJECTS = [
     "short": "SSH Workspace",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "Bringing remote workspaces, caching, conflict-safe synchronization, and a terminal into one continuous workflow.",
-    "description": "An SSH / SFTP remote workspace tool with local caching, conflict-safe synchronization, and a remote terminal. It grew from my direct interest in the remote development experience: fewer window switches mean more uninterrupted thinking.",
-    "challenge": "Remote work is about more than connecting to a machine. File synchronization, conflict handling, and bringing the terminal into the same context all affect real productivity.",
+    "role": "Independent Open-Source Developer",
+    "summary": "Combines remote workspaces, caching, conflict-safe sync, and a terminal in one continuous workflow.",
+    "description": "An SSH / SFTP remote workspace with local caching, conflict-safe synchronization, and a remote terminal. It reflects my own focus on remote development: fewer window switches, more uninterrupted thinking.",
+    "challenge": "Remote development is more than connecting to a machine. File sync, conflict handling, and keeping the terminal in the same context all shape productivity.",
     "contributions": [
-      "Provided an SSH / SFTP remote workspace",
-      "Implemented local caching and conflict-safe synchronization",
+      "Built an SSH / SFTP remote workspace",
+      "Added local caching and conflict-safe synchronization",
       "Integrated a remote terminal into the same workspace"
     ],
     "outcomes": [
-      "Released under the MIT License",
-      "Established reusable remote workspace foundations"
+      "Open-sourced under the MIT License",
+      "Provides a reusable foundation for remote workspaces"
     ],
     "tags": [
       "SSH",
@@ -410,7 +410,7 @@ window.WILSON_PROJECTS = [
       "Sync"
     ],
     "link": "https://github.com/WilShi/dsh-ssh-workspace",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "dsh-coding-agents",
@@ -419,13 +419,13 @@ window.WILSON_PROJECTS = [
     "short": "Coding Agents",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "Managing Codex and Claude Code work sessions in a single control center.",
-    "description": "A unified control center for the AI coding toolchain, built to manage Codex and Claude Code sessions in one place and reduce fragmentation between coding assistants.",
-    "challenge": "As coding assistants multiply, what needs managing is not just conversations, but tasks, context, and work status.",
+    "role": "Independent Open-Source Developer",
+    "summary": "Manages Codex and Claude Code work sessions from one control center.",
+    "description": "A unified control center for AI coding tools that centralizes Codex and Claude Code sessions and reduces fragmentation between assistants.",
+    "challenge": "As coding assistants multiply, the challenge expands from conversations to tasks, context, and work status.",
     "contributions": [
-      "Unified the control entry point for Codex / Claude Code",
-      "Provided centralized management for coding assistant sessions"
+      "Unified control of Codex / Claude Code",
+      "Centralized coding assistant session management"
     ],
     "outcomes": [
       "Maintained as an open-source project",
@@ -437,7 +437,7 @@ window.WILSON_PROJECTS = [
       "AI Coding"
     ],
     "link": "https://github.com/WilShi/dsh-coding-agents",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "dsh-external-api",
@@ -446,14 +446,14 @@ window.WILSON_PROJECTS = [
     "short": "External API",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "Providing an authenticated HTTP API for local and trusted-LAN integrations.",
-    "description": "An opt-in authenticated HTTP API for DeepSeek Harness integrations in local and trusted-LAN environments. It explicitly defines its trust boundary rather than exposing the interface indiscriminately to the public internet.",
-    "challenge": "External integrations need both convenience and clear boundaries. Authentication and intended usage scenarios should be documented from the outset.",
+    "role": "Independent Open-Source Developer",
+    "summary": "An authenticated HTTP API for local and trusted-LAN integrations.",
+    "description": "An opt-in, authenticated HTTP API for DeepSeek Harness integrations on local machines and trusted LANs. It defines a clear trust boundary instead of exposing the API indiscriminately to the public internet.",
+    "challenge": "External integrations need convenience without ambiguous boundaries. Authentication and intended use cases should be explicit from the start.",
     "contributions": [
-      "Provided external HTTP API integration capabilities",
-      "Added an access authentication mechanism",
-      "Defined clear usage boundaries for local and trusted-LAN environments"
+      "Added an external HTTP integration API",
+      "Added access authentication",
+      "Defined local and trusted-LAN usage boundaries"
     ],
     "outcomes": [
       "Released as an open-source project",
@@ -465,7 +465,7 @@ window.WILSON_PROJECTS = [
       "LAN"
     ],
     "link": "https://github.com/WilShi/dsh-external-api",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "dsh-plugin-builder",
@@ -474,14 +474,14 @@ window.WILSON_PROJECTS = [
     "short": "Plugin Builder",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "Bringing the plugin creation workflow and development conventions together to shorten the path from idea to plugin.",
-    "description": "An intelligent builder for DeepSeek Harness plugins, accompanied by a complete set of development conventions. It combines how to build with how to build consistently in one workflow.",
-    "challenge": "A plugin ecosystem needs more than additional plugins; it also needs reusable conventions, boundaries, and creation methods.",
+    "role": "Independent Open-Source Developer",
+    "summary": "Combines plugin creation and development conventions to shorten the path from idea to plugin.",
+    "description": "An intelligent DeepSeek Harness plugin builder with comprehensive development conventions, combining creation guidance and consistent implementation practices in one workflow.",
+    "challenge": "A plugin ecosystem needs reusable conventions, boundaries, and creation methods—not just more plugins.",
     "contributions": [
       "Provided an intelligent plugin creation workflow",
-      "Documented supporting development conventions",
-      "Embedded those conventions in the actual creation process"
+      "Documented the accompanying development conventions",
+      "Embedded those conventions in the creation process"
     ],
     "outcomes": [
       "Released as an open-source project",
@@ -493,7 +493,7 @@ window.WILSON_PROJECTS = [
       "Conventions"
     ],
     "link": "https://github.com/WilShi/dsh-plugin-builder",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "dsh-connector-builder",
@@ -502,18 +502,18 @@ window.WILSON_PROJECTS = [
     "short": "Connector Builder",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "A toolchain covering MCP connector design, validation, registration, and sharing.",
-    "description": "An MCP connector builder that connects design, validation, registration, and sharing. It addresses the complete lifecycle of a connector, from idea to reusable asset.",
-    "challenge": "A connector is not finished when its code is written. Whether it can be validated, registered, and shared determines whether it can truly become part of the ecosystem.",
+    "role": "Independent Open-Source Developer",
+    "summary": "A toolchain for designing, validating, registering, and sharing MCP connectors.",
+    "description": "An MCP connector builder that covers design, validation, registration, and sharing across the full lifecycle from idea to reusable asset.",
+    "challenge": "Writing the code is only part of building a connector. Validation, registration, and sharing determine whether it can actually join the ecosystem.",
     "contributions": [
       "Supported MCP connector design",
-      "Provided validation, registration, and sharing workflows",
-      "Organized connector development into a complete toolchain"
+      "Added validation, registration, and sharing workflows",
+      "Organized connector development into an end-to-end toolchain"
     ],
     "outcomes": [
       "Released as an open-source project",
-      "Provides a unified build entry point for MCP connectors"
+      "Provides a unified way to build MCP connectors"
     ],
     "tags": [
       "MCP",
@@ -521,7 +521,7 @@ window.WILSON_PROJECTS = [
       "Validation"
     ],
     "link": "https://github.com/WilShi/dsh-connector-builder",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "dsh-skill-station",
@@ -530,18 +530,18 @@ window.WILSON_PROJECTS = [
     "short": "Skill Station",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "An Agent skill ecosystem manager with scanning, importing, and drag-and-drop installation.",
-    "description": "An Agent skill management station that can scan skill libraries across different tools, import them with one click, manage global and project skills, and install skills through drag and drop.",
-    "challenge": "When skills are scattered across directories and tools, the real difficulty is discovering, comparing, and managing them, not simply copying files.",
+    "role": "Independent Open-Source Developer",
+    "summary": "An agent skill manager with library scanning, one-click import, and drag-and-drop installation.",
+    "description": "An agent skill manager that scans skill libraries across tools, imports skills with one click, manages global and project-level skills, and supports drag-and-drop installation.",
+    "challenge": "When skills are scattered across directories and tools, discovery, comparison, and management become harder than simply copying files.",
     "contributions": [
-      "Scans skill libraries across multiple Agent tools",
+      "Scans skill libraries across multiple agent tools",
       "Supports one-click import and drag-and-drop installation",
-      "Provides global and project-level skill management"
+      "Manages global and project-level skills"
     ],
     "outcomes": [
       "Released as an open-source project",
-      "Provides a unified entry point for managing the skill ecosystem"
+      "Provides a central entry point for managing the skill ecosystem"
     ],
     "tags": [
       "Agent Skills",
@@ -549,7 +549,7 @@ window.WILSON_PROJECTS = [
       "Drag & Drop"
     ],
     "link": "https://github.com/WilShi/dsh-skill-station",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "agent-platform-cookbook",
@@ -558,14 +558,14 @@ window.WILSON_PROJECTS = [
     "short": "Platform Cookbook",
     "category": "open",
     "categoryLabel": "Engineering Notes",
-    "role": "Independent Open Source",
-    "summary": "Turning publicly shareable methods from enterprise Agent platform practice into a collection of engineering patterns.",
-    "description": "A sanitized collection of engineering patterns from enterprise Agent platform practice, covering unified multi-framework management, channel integration gateways, and more. Rather than showcasing an internal system, it distills experience into methods others can understand and use.",
-    "challenge": "What can truly be shared is not internal names and architectural details, but the problems, constraints, and solutions. Sanitization is part of the content design.",
+    "role": "Independent Open-Source Developer",
+    "summary": "A collection of publicly shareable engineering patterns drawn from enterprise agent platform work.",
+    "description": "A sanitized set of engineering patterns from enterprise agent platform work, including unified multi-framework management and channel integration gateways. It turns experience into reusable methods rather than showcasing an internal system.",
+    "challenge": "The shareable value lies in the problems, constraints, and solutions—not internal names or architectural details. Sanitization is part of the content design.",
     "contributions": [
       "Documented engineering patterns for unified multi-framework management",
-      "Distilled practices including channel integration gateways",
-      "Sanitized enterprise content for public disclosure"
+      "Distilled practices such as channel integration gateways",
+      "Sanitized enterprise content for publication"
     ],
     "outcomes": [
       "Published as open-source engineering notes",
@@ -577,7 +577,7 @@ window.WILSON_PROJECTS = [
       "Sanitized"
     ],
     "link": "https://github.com/WilShi/agent-platform-cookbook",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "scholarmind",
@@ -586,18 +586,18 @@ window.WILSON_PROJECTS = [
     "short": "ScholarMind",
     "category": "open",
     "categoryLabel": "Research Project",
-    "role": "Independent Open Source",
-    "summary": "Letting multiple Agents discuss a paper from different perspectives instead of generating only a summary.",
-    "description": "ScholarMind is a multi-agent academic research system. Multiple Agents simulate a seminar, examining a paper's questions, methods, evidence, and limitations from different perspectives before producing a more accessible interpretation.",
-    "challenge": "Complex papers need more than condensed text; they also need questioning and cross-validation. Multiple agents provide a way to organize different perspectives.",
+    "role": "Independent Open-Source Developer",
+    "summary": "Lets multiple agents discuss a paper from different perspectives instead of producing only a summary.",
+    "description": "ScholarMind is a multi-agent academic research system. Agents simulate a seminar, examining a paper's questions, methods, evidence, and limitations from different perspectives before producing a more accessible interpretation.",
+    "challenge": "Complex papers need questioning and cross-validation, not just compression. Multiple agents offer a way to organize different perspectives.",
     "contributions": [
-      "Designed a multi-agent collaborative paper interpretation workflow",
-      "Organized different analytical perspectives into a seminar process",
-      "Turned complex academic content into more accessible explanations"
+      "Designed a multi-agent workflow for collaborative paper interpretation",
+      "Organized different analytical perspectives into a seminar-style process",
+      "Made complex academic content more accessible"
     ],
     "outcomes": [
       "Released as an open-source project",
-      "Explores the use of multi-agent systems in knowledge interpretation"
+      "Explores multi-agent approaches to knowledge interpretation"
     ],
     "tags": [
       "Multi-agent",
@@ -605,7 +605,7 @@ window.WILSON_PROJECTS = [
       "Research"
     ],
     "link": "https://github.com/WilShi/ScholarMind_MAS",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   },
   {
     "id": "kafka-pulsar-ops-toolkit",
@@ -614,13 +614,13 @@ window.WILSON_PROJECTS = [
     "short": "Messaging Ops",
     "category": "open",
     "categoryLabel": "Open-Source Tool",
-    "role": "Independent Open Source",
-    "summary": "A toolkit of the checks and reports actually used in Kafka / Pulsar operations.",
-    "description": "A messaging middleware operations toolkit with frontline SRE tools such as consumer-backlog inspections and topic lag reports, drawn from production messaging middleware operations.",
-    "challenge": "Operations tools should make repetitive checks faster and clearer, and should support both real incident investigation and day-to-day governance.",
+    "role": "Independent Open-Source Developer",
+    "summary": "Practical Kafka / Pulsar operations checks and reports in one toolkit.",
+    "description": "A messaging middleware operations toolkit built from production experience, with frontline SRE tools for consumer-backlog inspections, topic lag reports, and more.",
+    "challenge": "Operations tools should make repetitive checks faster and clearer while supporting incident investigation and day-to-day governance.",
     "contributions": [
       "Curated Kafka / Pulsar operations scripts",
-      "Provided consumer-backlog inspections and topic lag reports",
+      "Added consumer-backlog inspections and topic lag reports",
       "Distilled frontline production operations experience"
     ],
     "outcomes": [
@@ -634,6 +634,6 @@ window.WILSON_PROJECTS = [
       "Operations"
     ],
     "link": "https://github.com/WilShi/kafka-pulsar-ops-toolkit",
-    "linkLabel": "Open GitHub Repository"
+    "linkLabel": "Open GitHub repository"
   }
 ];

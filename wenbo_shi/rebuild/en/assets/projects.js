@@ -39,7 +39,7 @@
     empty.hidden=items.length>0;
     list.innerHTML=items.map(function(project){
       var href="project.html?id="+encodeURIComponent(project.id);
-      return '<article class="catalog-row"><span class="catalog-number">'+esc(project.number)+'</span><div><h2><a href="'+href+'">'+esc(project.title)+'</a></h2><span class="catalog-kind">'+esc(project.categoryLabel)+' · '+esc(project.role)+'</span></div><div><p class="catalog-summary">'+esc(project.summary)+'</p><ul class="catalog-tags">'+project.tags.slice(0,3).map(function(tag){return '<li>'+esc(tag)+'</li>'}).join("")+'</ul></div><a class="catalog-link" href="'+href+'">Open project file ↗</a></article>';
+      return '<article class="catalog-row"><span class="catalog-number">'+esc(project.number)+'</span><div><h2><a href="'+href+'">'+esc(project.title)+'</a></h2><span class="catalog-kind">'+esc(project.categoryLabel)+' · '+esc(project.role)+'</span></div><div><p class="catalog-summary">'+esc(project.summary)+'</p><ul class="catalog-tags">'+project.tags.slice(0,3).map(function(tag){return '<li>'+esc(tag)+'</li>'}).join("")+'</ul></div><a class="catalog-link" href="'+href+'">View project ↗</a></article>';
     }).join("");
     if(updateUrl){
       var url=new URL(location.href);
