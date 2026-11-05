@@ -35,6 +35,9 @@ html[data-theme="night"]{color-scheme:dark;--grid:rgba(181,255,99,.055)}
 @media(max-width:520px){.strength-grid{grid-template-columns:1fr}}
 @media print{.strength-grid{grid-template-columns:1fr 1fr;gap:12pt}.resume-project{break-inside:auto}.resume-project h5{break-after:avoid}.resume-entry:first-child,.resume-internships{break-after:avoid}}
 
+
+.resume-summary-line{padding:12px 0 18px;border-bottom:1px solid var(--line);color:var(--accent);font:11px/1.7 var(--mono);letter-spacing:.04em}.brief-project{padding:14px 0;border-top:1px solid var(--line)}.brief-project:first-child{border-top:0}.brief-project h5{margin-bottom:6px}.brief-project p{font-size:12px;line-height:1.75;color:var(--muted)}
+
 /* Interaction and printing edge cases */
 html[data-motion="off"]{scroll-behavior:auto!important}html[data-motion="off"] *{animation:none!important;transition:none!important}
 .resume-doc-head a{min-height:44px;display:inline-flex;align-items:center}
